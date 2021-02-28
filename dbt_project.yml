@@ -7,7 +7,7 @@ version: '1.0.0'
 config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'default'
+profile: 'my_new_project'
 
 # These configurations specify where dbt should look for different types of files.
 # The `source-paths` config, for example, states that models in this project can be
@@ -42,9 +42,9 @@ vars:
   # How to run:
   # 1. dbt deps
   # 2. dbt seed
-  # 3. dbt run
+  # 3. dbt ru
   segment:
-    segment_page_views_table: "{{ source('segment', 'shopify_littledata.pages') }}"
+    segment_page_views_table: "{{ source('shopify_littledata', 'pages') }}"
     # segment_sessionization_trailing_window: 3
     # segment_inactivity_cutoff: 30 * 60
     # segment_pass_through_columns: []
