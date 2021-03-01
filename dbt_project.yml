@@ -40,11 +40,11 @@ vars:
   # How to run:
   # 1. dbt deps
   # 2. dbt seed
-  # 3. dbt ru
+  # 3. dbt run
   segment:
     # # THIS WORKS:
-    # segment_page_views_table: "dbt_jkaplan.pages"
-    segment_page_views_table: "{{ source ('fivetran-data-culture-big-vv9p.dbt_jkaplan', 'pages') }}"
+    segment_page_views_table: "dbt_jkaplan.pages"
+    
     # # OTHER CONFIGS 
     # segment_sessionization_trailing_window: 3
     # segment_inactivity_cutoff: 30 * 60
