@@ -1,0 +1,2160 @@
+2021-03-01 00:01:06.709099 (MainThread): Running with dbt=0.19.0
+2021-03-01 00:01:07.530790 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.seed.SeedTask'>, debug=False, defer=None, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/jonahkaplan/.dbt', project_dir=None, record_timing_info=None, rpc_method='seed', selector_name=None, show=False, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='seed', write_json=True)
+2021-03-01 00:01:07.531762 (MainThread): Tracking: tracking
+2021-03-01 00:01:07.539789 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e3e4ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e3c16d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e3b8d60>]}
+2021-03-01 00:01:07.566368 (MainThread): Partial parsing not enabled
+2021-03-01 00:01:07.567857 (MainThread): Parsing macros/etc.sql
+2021-03-01 00:01:07.571306 (MainThread): Parsing macros/catalog.sql
+2021-03-01 00:01:07.578507 (MainThread): Parsing macros/adapters.sql
+2021-03-01 00:01:07.600166 (MainThread): Parsing macros/materializations/seed.sql
+2021-03-01 00:01:07.603998 (MainThread): Parsing macros/materializations/view.sql
+2021-03-01 00:01:07.607597 (MainThread): Parsing macros/materializations/table.sql
+2021-03-01 00:01:07.618503 (MainThread): Parsing macros/materializations/copy.sql
+2021-03-01 00:01:07.623446 (MainThread): Parsing macros/materializations/incremental.sql
+2021-03-01 00:01:07.638314 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-03-01 00:01:07.643558 (MainThread): Parsing macros/core.sql
+2021-03-01 00:01:07.649222 (MainThread): Parsing macros/materializations/helpers.sql
+2021-03-01 00:01:07.660528 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-03-01 00:01:07.663146 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-03-01 00:01:07.682648 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-03-01 00:01:07.716490 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-03-01 00:01:07.738415 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-03-01 00:01:07.740703 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-03-01 00:01:07.747541 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-03-01 00:01:07.762409 (MainThread): Parsing macros/materializations/table/table.sql
+2021-03-01 00:01:07.770358 (MainThread): Parsing macros/materializations/view/view.sql
+2021-03-01 00:01:07.779392 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-03-01 00:01:07.785683 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-03-01 00:01:07.787104 (MainThread): Parsing macros/etc/query.sql
+2021-03-01 00:01:07.788700 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-03-01 00:01:07.790978 (MainThread): Parsing macros/etc/datetime.sql
+2021-03-01 00:01:07.800733 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-03-01 00:01:07.803129 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-03-01 00:01:07.805304 (MainThread): Parsing macros/adapters/common.sql
+2021-03-01 00:01:07.850044 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-03-01 00:01:07.852822 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-03-01 00:01:07.855124 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-03-01 00:01:07.857716 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-03-01 00:01:07.866924 (MainThread): Partial parsing not enabled
+2021-03-01 00:01:08.058163 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.prod
+- models.staging
+
+2021-03-01 00:01:08.058418 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c886386a-8692-4382-81de-9a759b9a19d0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e521040>]}
+2021-03-01 00:01:08.081886 (MainThread): Found 0 models, 0 tests, 0 snapshots, 0 analyses, 156 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-03-01 00:01:08.082453 (MainThread): WARNING: Nothing to do. Try checking your model configs and model specification args
+2021-03-01 00:01:08.082691 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e4f3970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e4f3d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e4f3fa0>]}
+2021-03-01 00:01:08.082869 (MainThread): Flushing usage events
+2021-03-01 00:01:42.542026 (MainThread): Running with dbt=0.19.0
+2021-03-01 00:01:42.999153 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/jonahkaplan/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-03-01 00:01:42.999983 (MainThread): Tracking: tracking
+2021-03-01 00:01:43.006339 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c1fcfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c20b370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c20b130>]}
+2021-03-01 00:01:43.032592 (MainThread): Partial parsing not enabled
+2021-03-01 00:01:43.033851 (MainThread): Parsing macros/etc.sql
+2021-03-01 00:01:43.036569 (MainThread): Parsing macros/catalog.sql
+2021-03-01 00:01:43.043454 (MainThread): Parsing macros/adapters.sql
+2021-03-01 00:01:43.064279 (MainThread): Parsing macros/materializations/seed.sql
+2021-03-01 00:01:43.067256 (MainThread): Parsing macros/materializations/view.sql
+2021-03-01 00:01:43.070223 (MainThread): Parsing macros/materializations/table.sql
+2021-03-01 00:01:43.080713 (MainThread): Parsing macros/materializations/copy.sql
+2021-03-01 00:01:43.085551 (MainThread): Parsing macros/materializations/incremental.sql
+2021-03-01 00:01:43.099428 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-03-01 00:01:43.102978 (MainThread): Parsing macros/core.sql
+2021-03-01 00:01:43.108038 (MainThread): Parsing macros/materializations/helpers.sql
+2021-03-01 00:01:43.117462 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-03-01 00:01:43.119381 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-03-01 00:01:43.139298 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-03-01 00:01:43.173681 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-03-01 00:01:43.195608 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-03-01 00:01:43.197506 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-03-01 00:01:43.203971 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-03-01 00:01:43.218299 (MainThread): Parsing macros/materializations/table/table.sql
+2021-03-01 00:01:43.225349 (MainThread): Parsing macros/materializations/view/view.sql
+2021-03-01 00:01:43.231815 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-03-01 00:01:43.236940 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-03-01 00:01:43.237939 (MainThread): Parsing macros/etc/query.sql
+2021-03-01 00:01:43.239021 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-03-01 00:01:43.240670 (MainThread): Parsing macros/etc/datetime.sql
+2021-03-01 00:01:43.249917 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-03-01 00:01:43.251925 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-03-01 00:01:43.253633 (MainThread): Parsing macros/adapters/common.sql
+2021-03-01 00:01:43.302246 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-03-01 00:01:43.304301 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-03-01 00:01:43.305907 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-03-01 00:01:43.307793 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-03-01 00:01:43.317232 (MainThread): Partial parsing not enabled
+2021-03-01 00:01:43.512680 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.staging
+- models.prod
+
+2021-03-01 00:01:43.512947 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '47343353-4de0-44d5-a3a1-30eec9eb40c6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c32f2e0>]}
+2021-03-01 00:01:43.535257 (MainThread): Found 0 models, 0 tests, 0 snapshots, 0 analyses, 156 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-03-01 00:01:43.535805 (MainThread): WARNING: Nothing to do. Try checking your model configs and model specification args
+2021-03-01 00:01:43.536056 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c328340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c328100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c3281c0>]}
+2021-03-01 00:01:43.536239 (MainThread): Flushing usage events
+2021-03-01 00:03:07.983065 (MainThread): Running with dbt=0.19.0
+2021-03-01 00:03:08.438495 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.deps.DepsTask'>, debug=False, defer=None, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/jonahkaplan/.dbt', project_dir=None, record_timing_info=None, rpc_method='deps', single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, use_cache=True, use_colors=None, vars='{}', warn_error=False, which='deps', write_json=True)
+2021-03-01 00:03:08.438918 (MainThread): Tracking: tracking
+2021-03-01 00:03:08.445765 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a95d730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a96d2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a96d100>]}
+2021-03-01 00:03:08.447673 (MainThread): Set downloads directory='/var/folders/ll/w6qlsbk91c120j3gn65csqx00000gn/T/dbt-downloads-c8sdbfc6'
+2021-03-01 00:03:08.449587 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/index.json
+2021-03-01 00:03:08.683636 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/index.json 200
+2021-03-01 00:03:08.684189 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/segment.json
+2021-03-01 00:03:09.254786 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/segment.json 200
+2021-03-01 00:03:09.264644 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/segment/0.5.1.json
+2021-03-01 00:03:09.522708 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/segment/0.5.1.json 200
+2021-03-01 00:03:09.534754 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json
+2021-03-01 00:03:09.711252 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json 200
+2021-03-01 00:03:09.733161 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils/0.6.4.json
+2021-03-01 00:03:09.915508 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils/0.6.4.json 200
+2021-03-01 00:03:09.916534 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/segment.json
+2021-03-01 00:03:10.136067 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/segment.json 200
+2021-03-01 00:03:10.145793 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json
+2021-03-01 00:03:10.289337 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils.json 200
+2021-03-01 00:03:10.310956 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/segment/0.5.1.json
+2021-03-01 00:03:10.789443 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/segment/0.5.1.json 200
+2021-03-01 00:03:10.792422 (MainThread): Making package registry request: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils/0.6.4.json
+2021-03-01 00:03:10.953555 (MainThread): Response from registry: GET https://hub.getdbt.com/api/v1/fishtown-analytics/dbt_utils/0.6.4.json 200
+2021-03-01 00:03:10.955391 (MainThread): Installing fishtown-analytics/segment@0.5.1
+2021-03-01 00:03:11.411475 (MainThread):   Installed from version 0.5.1
+
+2021-03-01 00:03:11.411799 (MainThread): Sending event: {'category': 'dbt', 'action': 'package', 'label': '3e97acff-ba6f-4835-961b-5b3e2a555d44', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba0e040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba0e250>]}
+2021-03-01 00:03:11.412072 (MainThread): Installing fishtown-analytics/dbt_utils@0.6.4
+2021-03-01 00:03:12.102176 (MainThread):   Installed from version 0.6.4
+
+2021-03-01 00:03:12.102530 (MainThread): Sending event: {'category': 'dbt', 'action': 'package', 'label': '3e97acff-ba6f-4835-961b-5b3e2a555d44', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a947850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a96d400>]}
+2021-03-01 00:03:12.103726 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a947eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10967db50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a96d400>]}
+2021-03-01 00:03:12.104055 (MainThread): Flushing usage events
+2021-03-01 00:05:49.856487 (MainThread): Running with dbt=0.19.0
+2021-03-01 00:05:50.670565 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.seed.SeedTask'>, debug=False, defer=None, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/jonahkaplan/.dbt', project_dir=None, record_timing_info=None, rpc_method='seed', selector_name=None, show=False, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='seed', write_json=True)
+2021-03-01 00:05:50.671786 (MainThread): Tracking: tracking
+2021-03-01 00:05:50.681983 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107eedd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1091be7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1091bea90>]}
+2021-03-01 00:05:50.749140 (MainThread): Partial parsing not enabled
+2021-03-01 00:05:50.751038 (MainThread): Parsing macros/etc.sql
+2021-03-01 00:05:50.754597 (MainThread): Parsing macros/catalog.sql
+2021-03-01 00:05:50.762079 (MainThread): Parsing macros/adapters.sql
+2021-03-01 00:05:50.784198 (MainThread): Parsing macros/materializations/seed.sql
+2021-03-01 00:05:50.787788 (MainThread): Parsing macros/materializations/view.sql
+2021-03-01 00:05:50.791275 (MainThread): Parsing macros/materializations/table.sql
+2021-03-01 00:05:50.802457 (MainThread): Parsing macros/materializations/copy.sql
+2021-03-01 00:05:50.807605 (MainThread): Parsing macros/materializations/incremental.sql
+2021-03-01 00:05:50.821667 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-03-01 00:05:50.826440 (MainThread): Parsing macros/core.sql
+2021-03-01 00:05:50.831422 (MainThread): Parsing macros/materializations/helpers.sql
+2021-03-01 00:05:50.842118 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-03-01 00:05:50.848216 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-03-01 00:05:50.877216 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-03-01 00:05:50.912534 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-03-01 00:05:50.934495 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-03-01 00:05:50.936745 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-03-01 00:05:50.943777 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-03-01 00:05:50.958477 (MainThread): Parsing macros/materializations/table/table.sql
+2021-03-01 00:05:50.973359 (MainThread): Parsing macros/materializations/view/view.sql
+2021-03-01 00:05:50.984905 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-03-01 00:05:50.992354 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-03-01 00:05:50.993964 (MainThread): Parsing macros/etc/query.sql
+2021-03-01 00:05:50.995612 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-03-01 00:05:50.997993 (MainThread): Parsing macros/etc/datetime.sql
+2021-03-01 00:05:51.009029 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-03-01 00:05:51.015433 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-03-01 00:05:51.020447 (MainThread): Parsing macros/adapters/common.sql
+2021-03-01 00:05:51.077725 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-03-01 00:05:51.080809 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-03-01 00:05:51.083013 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-03-01 00:05:51.085513 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-03-01 00:05:51.090947 (MainThread): Parsing macros/cross_db_utils/except.sql
+2021-03-01 00:05:51.093544 (MainThread): Parsing macros/cross_db_utils/replace.sql
+2021-03-01 00:05:51.096354 (MainThread): Parsing macros/cross_db_utils/concat.sql
+2021-03-01 00:05:51.099896 (MainThread): Parsing macros/cross_db_utils/datatypes.sql
+2021-03-01 00:05:51.108927 (MainThread): Parsing macros/cross_db_utils/_is_relation.sql
+2021-03-01 00:05:51.111409 (MainThread): Parsing macros/cross_db_utils/length.sql
+2021-03-01 00:05:51.113647 (MainThread): Parsing macros/cross_db_utils/dateadd.sql
+2021-03-01 00:05:51.116807 (MainThread): Parsing macros/cross_db_utils/intersect.sql
+2021-03-01 00:05:51.118567 (MainThread): Parsing macros/cross_db_utils/right.sql
+2021-03-01 00:05:51.122147 (MainThread): Parsing macros/cross_db_utils/datediff.sql
+2021-03-01 00:05:51.134716 (MainThread): Parsing macros/cross_db_utils/safe_cast.sql
+2021-03-01 00:05:51.137528 (MainThread): Parsing macros/cross_db_utils/hash.sql
+2021-03-01 00:05:51.139675 (MainThread): Parsing macros/cross_db_utils/identifier.sql
+2021-03-01 00:05:51.142985 (MainThread): Parsing macros/cross_db_utils/position.sql
+2021-03-01 00:05:51.145288 (MainThread): Parsing macros/cross_db_utils/literal.sql
+2021-03-01 00:05:51.146833 (MainThread): Parsing macros/cross_db_utils/current_timestamp.sql
+2021-03-01 00:05:51.151564 (MainThread): Parsing macros/cross_db_utils/width_bucket.sql
+2021-03-01 00:05:51.159731 (MainThread): Parsing macros/cross_db_utils/_get_utils_namespaces.sql
+2021-03-01 00:05:51.161099 (MainThread): Parsing macros/cross_db_utils/last_day.sql
+2021-03-01 00:05:51.164894 (MainThread): Parsing macros/cross_db_utils/split_part.sql
+2021-03-01 00:05:51.167650 (MainThread): Parsing macros/cross_db_utils/date_trunc.sql
+2021-03-01 00:05:51.170377 (MainThread): Parsing macros/cross_db_utils/_is_ephemeral.sql
+2021-03-01 00:05:51.173928 (MainThread): Parsing macros/materializations/insert_by_period_materialization.sql
+2021-03-01 00:05:51.206558 (MainThread): Parsing macros/logger/pretty_log_format.sql
+2021-03-01 00:05:51.208297 (MainThread): Parsing macros/logger/pretty_time.sql
+2021-03-01 00:05:51.210143 (MainThread): Parsing macros/logger/log_info.sql
+2021-03-01 00:05:51.211779 (MainThread): Parsing macros/datetime/date_spine.sql
+2021-03-01 00:05:51.218033 (MainThread): Parsing macros/web/get_url_host.sql
+2021-03-01 00:05:51.221593 (MainThread): Parsing macros/web/get_url_path.sql
+2021-03-01 00:05:51.225343 (MainThread): Parsing macros/web/get_url_parameter.sql
+2021-03-01 00:05:51.227699 (MainThread): Parsing macros/geo/haversine_distance.sql
+2021-03-01 00:05:51.229878 (MainThread): Parsing macros/schema_tests/equal_rowcount.sql
+2021-03-01 00:05:51.232366 (MainThread): Parsing macros/schema_tests/relationships_where.sql
+2021-03-01 00:05:51.235946 (MainThread): Parsing macros/schema_tests/recency.sql
+2021-03-01 00:05:51.238473 (MainThread): Parsing macros/schema_tests/not_constant.sql
+2021-03-01 00:05:51.240615 (MainThread): Parsing macros/schema_tests/test_unique_where.sql
+2021-03-01 00:05:51.243273 (MainThread): Parsing macros/schema_tests/at_least_one.sql
+2021-03-01 00:05:51.245432 (MainThread): Parsing macros/schema_tests/unique_combination_of_columns.sql
+2021-03-01 00:05:51.249327 (MainThread): Parsing macros/schema_tests/cardinality_equality.sql
+2021-03-01 00:05:51.252491 (MainThread): Parsing macros/schema_tests/expression_is_true.sql
+2021-03-01 00:05:51.254974 (MainThread): Parsing macros/schema_tests/test_not_null_where.sql
+2021-03-01 00:05:51.257843 (MainThread): Parsing macros/schema_tests/equality.sql
+2021-03-01 00:05:51.262803 (MainThread): Parsing macros/schema_tests/mutually_exclusive_ranges.sql
+2021-03-01 00:05:51.270583 (MainThread): Parsing macros/sql/nullcheck_table.sql
+2021-03-01 00:05:51.273287 (MainThread): Parsing macros/sql/get_relations_by_pattern.sql
+2021-03-01 00:05:51.278786 (MainThread): Parsing macros/sql/generate_series.sql
+2021-03-01 00:05:51.287956 (MainThread): Parsing macros/sql/get_relations_by_prefix.sql
+2021-03-01 00:05:51.296328 (MainThread): Parsing macros/sql/get_tables_by_prefix_sql.sql
+2021-03-01 00:05:51.299784 (MainThread): Parsing macros/sql/star.sql
+2021-03-01 00:05:51.306495 (MainThread): Parsing macros/sql/unpivot.sql
+2021-03-01 00:05:51.317906 (MainThread): Parsing macros/sql/union.sql
+2021-03-01 00:05:51.329052 (MainThread): Parsing macros/sql/groupby.sql
+2021-03-01 00:05:51.331472 (MainThread): Parsing macros/sql/surrogate_key.sql
+2021-03-01 00:05:51.336122 (MainThread): Parsing macros/sql/safe_add.sql
+2021-03-01 00:05:51.338623 (MainThread): Parsing macros/sql/nullcheck.sql
+2021-03-01 00:05:51.341110 (MainThread): Parsing macros/sql/get_tables_by_pattern_sql.sql
+2021-03-01 00:05:51.349259 (MainThread): Parsing macros/sql/get_column_values.sql
+2021-03-01 00:05:51.354870 (MainThread): Parsing macros/sql/pivot.sql
+2021-03-01 00:05:51.359800 (MainThread): Parsing macros/sql/get_query_results_as_dict.sql
+2021-03-01 00:05:51.368808 (MainThread): Partial parsing not enabled
+2021-03-01 00:05:51.471974 (MainThread): Acquiring new bigquery connection "model.my_new_project.pages".
+2021-03-01 00:05:51.660617 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_user_stitching".
+2021-03-01 00:05:51.676972 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions".
+2021-03-01 00:05:51.703413 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions__stitched".
+2021-03-01 00:05:51.719781 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions__initial".
+2021-03-01 00:05:51.745404 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_page_views__sessionized".
+2021-03-01 00:05:51.804746 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_page_views".
+2021-03-01 00:05:51.905908 (MainThread): Acquiring new bigquery connection "analysis.segment.audience_overview".
+2021-03-01 00:05:52.225843 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1099156a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1098a6e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109898850>]}
+2021-03-01 00:05:52.226094 (MainThread): Flushing usage events
+2021-03-01 00:05:52.615638 (MainThread): Connection 'analysis.segment.audience_overview' was properly closed.
+2021-03-01 00:05:52.615969 (MainThread): Encountered an error:
+2021-03-01 00:05:52.616233 (MainThread): Compilation Error in model segment_web_page_views (models/base/segment_web_page_views.sql)
+  Model 'model.segment.segment_web_page_views' (models/base/segment_web_page_views.sql) depends on a source named 'dbt_jkaplan.pages' which was not found
+2021-03-01 00:05:52.628593 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = get_full_manifest(self.config)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/perf_utils.py", line 28, in get_full_manifest
+    return load_manifest(
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 854, in load_manifest
+    return ManifestLoader.load_all(config, macro_manifest, macro_hook)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 436, in load_all
+    manifest = loader.create_manifest()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 414, in create_manifest
+    self.process_manifest(manifest)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 379, in process_manifest
+    process_sources(manifest, project_name)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 812, in process_sources
+    _process_sources_for_node(manifest, current_project, node)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 795, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 498, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 597, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 435, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in model segment_web_page_views (models/base/segment_web_page_views.sql)
+  Model 'model.segment.segment_web_page_views' (models/base/segment_web_page_views.sql) depends on a source named 'dbt_jkaplan.pages' which was not found
+
+2021-03-01 00:09:10.231376 (MainThread): Running with dbt=0.19.0
+2021-03-01 00:09:11.094337 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.seed.SeedTask'>, debug=False, defer=None, exclude=None, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/jonahkaplan/.dbt', project_dir=None, record_timing_info=None, rpc_method='seed', selector_name=None, show=False, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='seed', write_json=True)
+2021-03-01 00:09:11.095765 (MainThread): Tracking: tracking
+2021-03-01 00:09:11.104703 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112df6430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112dd87f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112e040d0>]}
+2021-03-01 00:09:11.169513 (MainThread): Partial parsing not enabled
+2021-03-01 00:09:11.170836 (MainThread): Parsing macros/etc.sql
+2021-03-01 00:09:11.173863 (MainThread): Parsing macros/catalog.sql
+2021-03-01 00:09:11.181773 (MainThread): Parsing macros/adapters.sql
+2021-03-01 00:09:11.204978 (MainThread): Parsing macros/materializations/seed.sql
+2021-03-01 00:09:11.208617 (MainThread): Parsing macros/materializations/view.sql
+2021-03-01 00:09:11.212356 (MainThread): Parsing macros/materializations/table.sql
+2021-03-01 00:09:11.224327 (MainThread): Parsing macros/materializations/copy.sql
+2021-03-01 00:09:11.230631 (MainThread): Parsing macros/materializations/incremental.sql
+2021-03-01 00:09:11.247033 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-03-01 00:09:11.253843 (MainThread): Parsing macros/core.sql
+2021-03-01 00:09:11.259380 (MainThread): Parsing macros/materializations/helpers.sql
+2021-03-01 00:09:11.270824 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-03-01 00:09:11.274194 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-03-01 00:09:11.299648 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-03-01 00:09:11.337184 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-03-01 00:09:11.363296 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-03-01 00:09:11.365732 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-03-01 00:09:11.372797 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-03-01 00:09:11.389128 (MainThread): Parsing macros/materializations/table/table.sql
+2021-03-01 00:09:11.399291 (MainThread): Parsing macros/materializations/view/view.sql
+2021-03-01 00:09:11.407864 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-03-01 00:09:11.414461 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-03-01 00:09:11.416289 (MainThread): Parsing macros/etc/query.sql
+2021-03-01 00:09:11.418193 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-03-01 00:09:11.420959 (MainThread): Parsing macros/etc/datetime.sql
+2021-03-01 00:09:11.433201 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-03-01 00:09:11.435842 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-03-01 00:09:11.438193 (MainThread): Parsing macros/adapters/common.sql
+2021-03-01 00:09:11.483885 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-03-01 00:09:11.486108 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-03-01 00:09:11.488001 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-03-01 00:09:11.490159 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-03-01 00:09:11.496060 (MainThread): Parsing macros/cross_db_utils/except.sql
+2021-03-01 00:09:11.498463 (MainThread): Parsing macros/cross_db_utils/replace.sql
+2021-03-01 00:09:11.501093 (MainThread): Parsing macros/cross_db_utils/concat.sql
+2021-03-01 00:09:11.504588 (MainThread): Parsing macros/cross_db_utils/datatypes.sql
+2021-03-01 00:09:11.512347 (MainThread): Parsing macros/cross_db_utils/_is_relation.sql
+2021-03-01 00:09:11.514729 (MainThread): Parsing macros/cross_db_utils/length.sql
+2021-03-01 00:09:11.516898 (MainThread): Parsing macros/cross_db_utils/dateadd.sql
+2021-03-01 00:09:11.519979 (MainThread): Parsing macros/cross_db_utils/intersect.sql
+2021-03-01 00:09:11.521638 (MainThread): Parsing macros/cross_db_utils/right.sql
+2021-03-01 00:09:11.524806 (MainThread): Parsing macros/cross_db_utils/datediff.sql
+2021-03-01 00:09:11.535623 (MainThread): Parsing macros/cross_db_utils/safe_cast.sql
+2021-03-01 00:09:11.538165 (MainThread): Parsing macros/cross_db_utils/hash.sql
+2021-03-01 00:09:11.540141 (MainThread): Parsing macros/cross_db_utils/identifier.sql
+2021-03-01 00:09:11.542422 (MainThread): Parsing macros/cross_db_utils/position.sql
+2021-03-01 00:09:11.544613 (MainThread): Parsing macros/cross_db_utils/literal.sql
+2021-03-01 00:09:11.546259 (MainThread): Parsing macros/cross_db_utils/current_timestamp.sql
+2021-03-01 00:09:11.550306 (MainThread): Parsing macros/cross_db_utils/width_bucket.sql
+2021-03-01 00:09:11.556414 (MainThread): Parsing macros/cross_db_utils/_get_utils_namespaces.sql
+2021-03-01 00:09:11.557694 (MainThread): Parsing macros/cross_db_utils/last_day.sql
+2021-03-01 00:09:11.561216 (MainThread): Parsing macros/cross_db_utils/split_part.sql
+2021-03-01 00:09:11.563675 (MainThread): Parsing macros/cross_db_utils/date_trunc.sql
+2021-03-01 00:09:11.565832 (MainThread): Parsing macros/cross_db_utils/_is_ephemeral.sql
+2021-03-01 00:09:11.568454 (MainThread): Parsing macros/materializations/insert_by_period_materialization.sql
+2021-03-01 00:09:11.596328 (MainThread): Parsing macros/logger/pretty_log_format.sql
+2021-03-01 00:09:11.601084 (MainThread): Parsing macros/logger/pretty_time.sql
+2021-03-01 00:09:11.604743 (MainThread): Parsing macros/logger/log_info.sql
+2021-03-01 00:09:11.608038 (MainThread): Parsing macros/datetime/date_spine.sql
+2021-03-01 00:09:11.617924 (MainThread): Parsing macros/web/get_url_host.sql
+2021-03-01 00:09:11.622265 (MainThread): Parsing macros/web/get_url_path.sql
+2021-03-01 00:09:11.627268 (MainThread): Parsing macros/web/get_url_parameter.sql
+2021-03-01 00:09:11.630206 (MainThread): Parsing macros/geo/haversine_distance.sql
+2021-03-01 00:09:11.632785 (MainThread): Parsing macros/schema_tests/equal_rowcount.sql
+2021-03-01 00:09:11.635786 (MainThread): Parsing macros/schema_tests/relationships_where.sql
+2021-03-01 00:09:11.639734 (MainThread): Parsing macros/schema_tests/recency.sql
+2021-03-01 00:09:11.642400 (MainThread): Parsing macros/schema_tests/not_constant.sql
+2021-03-01 00:09:11.644707 (MainThread): Parsing macros/schema_tests/test_unique_where.sql
+2021-03-01 00:09:11.647635 (MainThread): Parsing macros/schema_tests/at_least_one.sql
+2021-03-01 00:09:11.649932 (MainThread): Parsing macros/schema_tests/unique_combination_of_columns.sql
+2021-03-01 00:09:11.654158 (MainThread): Parsing macros/schema_tests/cardinality_equality.sql
+2021-03-01 00:09:11.657256 (MainThread): Parsing macros/schema_tests/expression_is_true.sql
+2021-03-01 00:09:11.659703 (MainThread): Parsing macros/schema_tests/test_not_null_where.sql
+2021-03-01 00:09:11.662533 (MainThread): Parsing macros/schema_tests/equality.sql
+2021-03-01 00:09:11.667236 (MainThread): Parsing macros/schema_tests/mutually_exclusive_ranges.sql
+2021-03-01 00:09:11.674716 (MainThread): Parsing macros/sql/nullcheck_table.sql
+2021-03-01 00:09:11.677050 (MainThread): Parsing macros/sql/get_relations_by_pattern.sql
+2021-03-01 00:09:11.681507 (MainThread): Parsing macros/sql/generate_series.sql
+2021-03-01 00:09:11.686715 (MainThread): Parsing macros/sql/get_relations_by_prefix.sql
+2021-03-01 00:09:11.690938 (MainThread): Parsing macros/sql/get_tables_by_prefix_sql.sql
+2021-03-01 00:09:11.693219 (MainThread): Parsing macros/sql/star.sql
+2021-03-01 00:09:11.697935 (MainThread): Parsing macros/sql/unpivot.sql
+2021-03-01 00:09:11.706556 (MainThread): Parsing macros/sql/union.sql
+2021-03-01 00:09:11.715983 (MainThread): Parsing macros/sql/groupby.sql
+2021-03-01 00:09:11.717863 (MainThread): Parsing macros/sql/surrogate_key.sql
+2021-03-01 00:09:11.721979 (MainThread): Parsing macros/sql/safe_add.sql
+2021-03-01 00:09:11.724140 (MainThread): Parsing macros/sql/nullcheck.sql
+2021-03-01 00:09:11.726486 (MainThread): Parsing macros/sql/get_tables_by_pattern_sql.sql
+2021-03-01 00:09:11.733939 (MainThread): Parsing macros/sql/get_column_values.sql
+2021-03-01 00:09:11.739557 (MainThread): Parsing macros/sql/pivot.sql
+2021-03-01 00:09:11.744347 (MainThread): Parsing macros/sql/get_query_results_as_dict.sql
+2021-03-01 00:09:11.753260 (MainThread): Partial parsing not enabled
+2021-03-01 00:09:11.855141 (MainThread): Acquiring new bigquery connection "model.my_new_project.pages".
+2021-03-01 00:09:12.055596 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_user_stitching".
+2021-03-01 00:09:12.073899 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions".
+2021-03-01 00:09:12.107522 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions__stitched".
+2021-03-01 00:09:12.124365 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions__initial".
+2021-03-01 00:09:12.152256 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_page_views__sessionized".
+2021-03-01 00:09:12.201606 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_page_views".
+2021-03-01 00:09:12.302228 (MainThread): Acquiring new bigquery connection "analysis.segment.audience_overview".
+2021-03-01 00:09:12.611377 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113513af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1134caee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1132aeaf0>]}
+2021-03-01 00:09:12.611641 (MainThread): Flushing usage events
+2021-03-01 00:09:13.086167 (MainThread): Connection 'analysis.segment.audience_overview' was properly closed.
+2021-03-01 00:09:13.086493 (MainThread): Encountered an error:
+2021-03-01 00:09:13.086756 (MainThread): Compilation Error in model segment_web_page_views (models/base/segment_web_page_views.sql)
+  Model 'model.segment.segment_web_page_views' (models/base/segment_web_page_views.sql) depends on a source named 'segment.dbt_jkaplan.pages' which was not found
+2021-03-01 00:09:13.096899 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = get_full_manifest(self.config)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/perf_utils.py", line 28, in get_full_manifest
+    return load_manifest(
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 854, in load_manifest
+    return ManifestLoader.load_all(config, macro_manifest, macro_hook)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 436, in load_all
+    manifest = loader.create_manifest()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 414, in create_manifest
+    self.process_manifest(manifest)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 379, in process_manifest
+    process_sources(manifest, project_name)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 812, in process_sources
+    _process_sources_for_node(manifest, current_project, node)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 795, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 498, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 597, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 435, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in model segment_web_page_views (models/base/segment_web_page_views.sql)
+  Model 'model.segment.segment_web_page_views' (models/base/segment_web_page_views.sql) depends on a source named 'segment.dbt_jkaplan.pages' which was not found
+
+2021-03-01 00:10:14.087203 (MainThread): Running with dbt=0.19.0
+2021-03-01 00:10:14.847203 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.seed.SeedTask'>, debug=False, defer=None, exclude=None, full_refresh=True, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/jonahkaplan/.dbt', project_dir=None, record_timing_info=None, rpc_method='seed', selector_name=None, show=False, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='seed', write_json=True)
+2021-03-01 00:10:14.849320 (MainThread): Tracking: tracking
+2021-03-01 00:10:14.857218 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110efbb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f0a160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f0a610>]}
+2021-03-01 00:10:14.921935 (MainThread): Partial parsing not enabled
+2021-03-01 00:10:14.923372 (MainThread): Parsing macros/etc.sql
+2021-03-01 00:10:14.926687 (MainThread): Parsing macros/catalog.sql
+2021-03-01 00:10:14.933832 (MainThread): Parsing macros/adapters.sql
+2021-03-01 00:10:14.955366 (MainThread): Parsing macros/materializations/seed.sql
+2021-03-01 00:10:14.959354 (MainThread): Parsing macros/materializations/view.sql
+2021-03-01 00:10:14.962837 (MainThread): Parsing macros/materializations/table.sql
+2021-03-01 00:10:14.975334 (MainThread): Parsing macros/materializations/copy.sql
+2021-03-01 00:10:14.980850 (MainThread): Parsing macros/materializations/incremental.sql
+2021-03-01 00:10:14.995429 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-03-01 00:10:14.999301 (MainThread): Parsing macros/core.sql
+2021-03-01 00:10:15.004646 (MainThread): Parsing macros/materializations/helpers.sql
+2021-03-01 00:10:15.015197 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-03-01 00:10:15.017499 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-03-01 00:10:15.037337 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-03-01 00:10:15.072513 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-03-01 00:10:15.095317 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-03-01 00:10:15.097767 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-03-01 00:10:15.105048 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-03-01 00:10:15.132648 (MainThread): Parsing macros/materializations/table/table.sql
+2021-03-01 00:10:15.142462 (MainThread): Parsing macros/materializations/view/view.sql
+2021-03-01 00:10:15.154552 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-03-01 00:10:15.162687 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-03-01 00:10:15.164197 (MainThread): Parsing macros/etc/query.sql
+2021-03-01 00:10:15.165899 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-03-01 00:10:15.168375 (MainThread): Parsing macros/etc/datetime.sql
+2021-03-01 00:10:15.179427 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-03-01 00:10:15.181855 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-03-01 00:10:15.184089 (MainThread): Parsing macros/adapters/common.sql
+2021-03-01 00:10:15.229421 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-03-01 00:10:15.231718 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-03-01 00:10:15.233640 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-03-01 00:10:15.236149 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-03-01 00:10:15.243458 (MainThread): Parsing macros/cross_db_utils/except.sql
+2021-03-01 00:10:15.245905 (MainThread): Parsing macros/cross_db_utils/replace.sql
+2021-03-01 00:10:15.248603 (MainThread): Parsing macros/cross_db_utils/concat.sql
+2021-03-01 00:10:15.252624 (MainThread): Parsing macros/cross_db_utils/datatypes.sql
+2021-03-01 00:10:15.262555 (MainThread): Parsing macros/cross_db_utils/_is_relation.sql
+2021-03-01 00:10:15.264569 (MainThread): Parsing macros/cross_db_utils/length.sql
+2021-03-01 00:10:15.266858 (MainThread): Parsing macros/cross_db_utils/dateadd.sql
+2021-03-01 00:10:15.270135 (MainThread): Parsing macros/cross_db_utils/intersect.sql
+2021-03-01 00:10:15.271840 (MainThread): Parsing macros/cross_db_utils/right.sql
+2021-03-01 00:10:15.275159 (MainThread): Parsing macros/cross_db_utils/datediff.sql
+2021-03-01 00:10:15.286412 (MainThread): Parsing macros/cross_db_utils/safe_cast.sql
+2021-03-01 00:10:15.289904 (MainThread): Parsing macros/cross_db_utils/hash.sql
+2021-03-01 00:10:15.292745 (MainThread): Parsing macros/cross_db_utils/identifier.sql
+2021-03-01 00:10:15.295808 (MainThread): Parsing macros/cross_db_utils/position.sql
+2021-03-01 00:10:15.298391 (MainThread): Parsing macros/cross_db_utils/literal.sql
+2021-03-01 00:10:15.300166 (MainThread): Parsing macros/cross_db_utils/current_timestamp.sql
+2021-03-01 00:10:15.305163 (MainThread): Parsing macros/cross_db_utils/width_bucket.sql
+2021-03-01 00:10:15.311923 (MainThread): Parsing macros/cross_db_utils/_get_utils_namespaces.sql
+2021-03-01 00:10:15.313219 (MainThread): Parsing macros/cross_db_utils/last_day.sql
+2021-03-01 00:10:15.316988 (MainThread): Parsing macros/cross_db_utils/split_part.sql
+2021-03-01 00:10:15.319716 (MainThread): Parsing macros/cross_db_utils/date_trunc.sql
+2021-03-01 00:10:15.322010 (MainThread): Parsing macros/cross_db_utils/_is_ephemeral.sql
+2021-03-01 00:10:15.324545 (MainThread): Parsing macros/materializations/insert_by_period_materialization.sql
+2021-03-01 00:10:15.353266 (MainThread): Parsing macros/logger/pretty_log_format.sql
+2021-03-01 00:10:15.358145 (MainThread): Parsing macros/logger/pretty_time.sql
+2021-03-01 00:10:15.361894 (MainThread): Parsing macros/logger/log_info.sql
+2021-03-01 00:10:15.365222 (MainThread): Parsing macros/datetime/date_spine.sql
+2021-03-01 00:10:15.375203 (MainThread): Parsing macros/web/get_url_host.sql
+2021-03-01 00:10:15.379504 (MainThread): Parsing macros/web/get_url_path.sql
+2021-03-01 00:10:15.384478 (MainThread): Parsing macros/web/get_url_parameter.sql
+2021-03-01 00:10:15.387168 (MainThread): Parsing macros/geo/haversine_distance.sql
+2021-03-01 00:10:15.389662 (MainThread): Parsing macros/schema_tests/equal_rowcount.sql
+2021-03-01 00:10:15.392707 (MainThread): Parsing macros/schema_tests/relationships_where.sql
+2021-03-01 00:10:15.396608 (MainThread): Parsing macros/schema_tests/recency.sql
+2021-03-01 00:10:15.399262 (MainThread): Parsing macros/schema_tests/not_constant.sql
+2021-03-01 00:10:15.401574 (MainThread): Parsing macros/schema_tests/test_unique_where.sql
+2021-03-01 00:10:15.404412 (MainThread): Parsing macros/schema_tests/at_least_one.sql
+2021-03-01 00:10:15.406699 (MainThread): Parsing macros/schema_tests/unique_combination_of_columns.sql
+2021-03-01 00:10:15.411376 (MainThread): Parsing macros/schema_tests/cardinality_equality.sql
+2021-03-01 00:10:15.414606 (MainThread): Parsing macros/schema_tests/expression_is_true.sql
+2021-03-01 00:10:15.417061 (MainThread): Parsing macros/schema_tests/test_not_null_where.sql
+2021-03-01 00:10:15.419915 (MainThread): Parsing macros/schema_tests/equality.sql
+2021-03-01 00:10:15.424835 (MainThread): Parsing macros/schema_tests/mutually_exclusive_ranges.sql
+2021-03-01 00:10:15.432921 (MainThread): Parsing macros/sql/nullcheck_table.sql
+2021-03-01 00:10:15.435292 (MainThread): Parsing macros/sql/get_relations_by_pattern.sql
+2021-03-01 00:10:15.439904 (MainThread): Parsing macros/sql/generate_series.sql
+2021-03-01 00:10:15.445093 (MainThread): Parsing macros/sql/get_relations_by_prefix.sql
+2021-03-01 00:10:15.449410 (MainThread): Parsing macros/sql/get_tables_by_prefix_sql.sql
+2021-03-01 00:10:15.451647 (MainThread): Parsing macros/sql/star.sql
+2021-03-01 00:10:15.456316 (MainThread): Parsing macros/sql/unpivot.sql
+2021-03-01 00:10:15.465365 (MainThread): Parsing macros/sql/union.sql
+2021-03-01 00:10:15.476017 (MainThread): Parsing macros/sql/groupby.sql
+2021-03-01 00:10:15.478086 (MainThread): Parsing macros/sql/surrogate_key.sql
+2021-03-01 00:10:15.482633 (MainThread): Parsing macros/sql/safe_add.sql
+2021-03-01 00:10:15.484978 (MainThread): Parsing macros/sql/nullcheck.sql
+2021-03-01 00:10:15.487358 (MainThread): Parsing macros/sql/get_tables_by_pattern_sql.sql
+2021-03-01 00:10:15.495025 (MainThread): Parsing macros/sql/get_column_values.sql
+2021-03-01 00:10:15.500700 (MainThread): Parsing macros/sql/pivot.sql
+2021-03-01 00:10:15.505715 (MainThread): Parsing macros/sql/get_query_results_as_dict.sql
+2021-03-01 00:10:15.514799 (MainThread): Partial parsing not enabled
+2021-03-01 00:10:15.615362 (MainThread): Acquiring new bigquery connection "model.my_new_project.pages".
+2021-03-01 00:10:15.838968 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_user_stitching".
+2021-03-01 00:10:15.859691 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions".
+2021-03-01 00:10:15.886879 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions__stitched".
+2021-03-01 00:10:15.902121 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions__initial".
+2021-03-01 00:10:15.927426 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_page_views__sessionized".
+2021-03-01 00:10:15.974780 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_page_views".
+2021-03-01 00:10:16.072335 (MainThread): Acquiring new bigquery connection "analysis.segment.audience_overview".
+2021-03-01 00:10:16.390678 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1116158e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1115cce50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1115c25b0>]}
+2021-03-01 00:10:16.390943 (MainThread): Flushing usage events
+2021-03-01 00:10:16.824431 (MainThread): Connection 'analysis.segment.audience_overview' was properly closed.
+2021-03-01 00:10:16.824759 (MainThread): Encountered an error:
+2021-03-01 00:10:16.825025 (MainThread): Compilation Error in model segment_web_page_views (models/base/segment_web_page_views.sql)
+  Model 'model.segment.segment_web_page_views' (models/base/segment_web_page_views.sql) depends on a source named 'segment.dbt_jkaplan.pages' which was not found
+2021-03-01 00:10:16.835269 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = get_full_manifest(self.config)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/perf_utils.py", line 28, in get_full_manifest
+    return load_manifest(
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 854, in load_manifest
+    return ManifestLoader.load_all(config, macro_manifest, macro_hook)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 436, in load_all
+    manifest = loader.create_manifest()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 414, in create_manifest
+    self.process_manifest(manifest)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 379, in process_manifest
+    process_sources(manifest, project_name)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 812, in process_sources
+    _process_sources_for_node(manifest, current_project, node)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 795, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 498, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 597, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 435, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in model segment_web_page_views (models/base/segment_web_page_views.sql)
+  Model 'model.segment.segment_web_page_views' (models/base/segment_web_page_views.sql) depends on a source named 'segment.dbt_jkaplan.pages' which was not found
+
+2021-03-01 00:26:59.525188 (MainThread): Running with dbt=0.19.0
+2021-03-01 00:27:00.365337 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.seed.SeedTask'>, debug=False, defer=None, exclude=None, full_refresh=True, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/jonahkaplan/.dbt', project_dir=None, record_timing_info=None, rpc_method='seed', selector_name=None, show=False, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='seed', write_json=True)
+2021-03-01 00:27:00.367374 (MainThread): Tracking: tracking
+2021-03-01 00:27:00.380467 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109f9fb20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109faf610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109faf400>]}
+2021-03-01 00:27:00.445778 (MainThread): Partial parsing not enabled
+2021-03-01 00:27:00.447237 (MainThread): Parsing macros/etc.sql
+2021-03-01 00:27:00.450344 (MainThread): Parsing macros/catalog.sql
+2021-03-01 00:27:00.457246 (MainThread): Parsing macros/adapters.sql
+2021-03-01 00:27:00.481019 (MainThread): Parsing macros/materializations/seed.sql
+2021-03-01 00:27:00.484934 (MainThread): Parsing macros/materializations/view.sql
+2021-03-01 00:27:00.489235 (MainThread): Parsing macros/materializations/table.sql
+2021-03-01 00:27:00.506225 (MainThread): Parsing macros/materializations/copy.sql
+2021-03-01 00:27:00.512459 (MainThread): Parsing macros/materializations/incremental.sql
+2021-03-01 00:27:00.532061 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-03-01 00:27:00.538536 (MainThread): Parsing macros/core.sql
+2021-03-01 00:27:00.544682 (MainThread): Parsing macros/materializations/helpers.sql
+2021-03-01 00:27:00.556397 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-03-01 00:27:00.558977 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-03-01 00:27:00.578947 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-03-01 00:27:00.613079 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-03-01 00:27:00.636017 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-03-01 00:27:00.638500 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-03-01 00:27:00.646276 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-03-01 00:27:00.661640 (MainThread): Parsing macros/materializations/table/table.sql
+2021-03-01 00:27:00.669469 (MainThread): Parsing macros/materializations/view/view.sql
+2021-03-01 00:27:00.677022 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-03-01 00:27:00.683375 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-03-01 00:27:00.684836 (MainThread): Parsing macros/etc/query.sql
+2021-03-01 00:27:00.686278 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-03-01 00:27:00.688272 (MainThread): Parsing macros/etc/datetime.sql
+2021-03-01 00:27:00.697643 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-03-01 00:27:00.700039 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-03-01 00:27:00.702173 (MainThread): Parsing macros/adapters/common.sql
+2021-03-01 00:27:00.747965 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-03-01 00:27:00.750507 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-03-01 00:27:00.752477 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-03-01 00:27:00.754677 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-03-01 00:27:00.760716 (MainThread): Parsing macros/cross_db_utils/except.sql
+2021-03-01 00:27:00.763397 (MainThread): Parsing macros/cross_db_utils/replace.sql
+2021-03-01 00:27:00.766113 (MainThread): Parsing macros/cross_db_utils/concat.sql
+2021-03-01 00:27:00.769693 (MainThread): Parsing macros/cross_db_utils/datatypes.sql
+2021-03-01 00:27:00.778423 (MainThread): Parsing macros/cross_db_utils/_is_relation.sql
+2021-03-01 00:27:00.782223 (MainThread): Parsing macros/cross_db_utils/length.sql
+2021-03-01 00:27:00.786707 (MainThread): Parsing macros/cross_db_utils/dateadd.sql
+2021-03-01 00:27:00.792580 (MainThread): Parsing macros/cross_db_utils/intersect.sql
+2021-03-01 00:27:00.795420 (MainThread): Parsing macros/cross_db_utils/right.sql
+2021-03-01 00:27:00.800881 (MainThread): Parsing macros/cross_db_utils/datediff.sql
+2021-03-01 00:27:00.815704 (MainThread): Parsing macros/cross_db_utils/safe_cast.sql
+2021-03-01 00:27:00.818728 (MainThread): Parsing macros/cross_db_utils/hash.sql
+2021-03-01 00:27:00.821070 (MainThread): Parsing macros/cross_db_utils/identifier.sql
+2021-03-01 00:27:00.823571 (MainThread): Parsing macros/cross_db_utils/position.sql
+2021-03-01 00:27:00.825855 (MainThread): Parsing macros/cross_db_utils/literal.sql
+2021-03-01 00:27:00.827450 (MainThread): Parsing macros/cross_db_utils/current_timestamp.sql
+2021-03-01 00:27:00.831944 (MainThread): Parsing macros/cross_db_utils/width_bucket.sql
+2021-03-01 00:27:00.838343 (MainThread): Parsing macros/cross_db_utils/_get_utils_namespaces.sql
+2021-03-01 00:27:00.839606 (MainThread): Parsing macros/cross_db_utils/last_day.sql
+2021-03-01 00:27:00.843057 (MainThread): Parsing macros/cross_db_utils/split_part.sql
+2021-03-01 00:27:00.845715 (MainThread): Parsing macros/cross_db_utils/date_trunc.sql
+2021-03-01 00:27:00.847731 (MainThread): Parsing macros/cross_db_utils/_is_ephemeral.sql
+2021-03-01 00:27:00.850178 (MainThread): Parsing macros/materializations/insert_by_period_materialization.sql
+2021-03-01 00:27:00.878006 (MainThread): Parsing macros/logger/pretty_log_format.sql
+2021-03-01 00:27:00.879985 (MainThread): Parsing macros/logger/pretty_time.sql
+2021-03-01 00:27:00.882196 (MainThread): Parsing macros/logger/log_info.sql
+2021-03-01 00:27:00.884113 (MainThread): Parsing macros/datetime/date_spine.sql
+2021-03-01 00:27:00.890801 (MainThread): Parsing macros/web/get_url_host.sql
+2021-03-01 00:27:00.894669 (MainThread): Parsing macros/web/get_url_path.sql
+2021-03-01 00:27:00.898936 (MainThread): Parsing macros/web/get_url_parameter.sql
+2021-03-01 00:27:00.901512 (MainThread): Parsing macros/geo/haversine_distance.sql
+2021-03-01 00:27:00.903922 (MainThread): Parsing macros/schema_tests/equal_rowcount.sql
+2021-03-01 00:27:00.906627 (MainThread): Parsing macros/schema_tests/relationships_where.sql
+2021-03-01 00:27:00.910791 (MainThread): Parsing macros/schema_tests/recency.sql
+2021-03-01 00:27:00.913406 (MainThread): Parsing macros/schema_tests/not_constant.sql
+2021-03-01 00:27:00.915642 (MainThread): Parsing macros/schema_tests/test_unique_where.sql
+2021-03-01 00:27:00.918926 (MainThread): Parsing macros/schema_tests/at_least_one.sql
+2021-03-01 00:27:00.921217 (MainThread): Parsing macros/schema_tests/unique_combination_of_columns.sql
+2021-03-01 00:27:00.925356 (MainThread): Parsing macros/schema_tests/cardinality_equality.sql
+2021-03-01 00:27:00.928493 (MainThread): Parsing macros/schema_tests/expression_is_true.sql
+2021-03-01 00:27:00.931006 (MainThread): Parsing macros/schema_tests/test_not_null_where.sql
+2021-03-01 00:27:00.933762 (MainThread): Parsing macros/schema_tests/equality.sql
+2021-03-01 00:27:00.938360 (MainThread): Parsing macros/schema_tests/mutually_exclusive_ranges.sql
+2021-03-01 00:27:00.945784 (MainThread): Parsing macros/sql/nullcheck_table.sql
+2021-03-01 00:27:00.947968 (MainThread): Parsing macros/sql/get_relations_by_pattern.sql
+2021-03-01 00:27:00.952422 (MainThread): Parsing macros/sql/generate_series.sql
+2021-03-01 00:27:00.958097 (MainThread): Parsing macros/sql/get_relations_by_prefix.sql
+2021-03-01 00:27:00.962697 (MainThread): Parsing macros/sql/get_tables_by_prefix_sql.sql
+2021-03-01 00:27:00.965081 (MainThread): Parsing macros/sql/star.sql
+2021-03-01 00:27:00.969685 (MainThread): Parsing macros/sql/unpivot.sql
+2021-03-01 00:27:00.978510 (MainThread): Parsing macros/sql/union.sql
+2021-03-01 00:27:00.989795 (MainThread): Parsing macros/sql/groupby.sql
+2021-03-01 00:27:00.991894 (MainThread): Parsing macros/sql/surrogate_key.sql
+2021-03-01 00:27:00.996527 (MainThread): Parsing macros/sql/safe_add.sql
+2021-03-01 00:27:00.998867 (MainThread): Parsing macros/sql/nullcheck.sql
+2021-03-01 00:27:01.001316 (MainThread): Parsing macros/sql/get_tables_by_pattern_sql.sql
+2021-03-01 00:27:01.010409 (MainThread): Parsing macros/sql/get_column_values.sql
+2021-03-01 00:27:01.016581 (MainThread): Parsing macros/sql/pivot.sql
+2021-03-01 00:27:01.021888 (MainThread): Parsing macros/sql/get_query_results_as_dict.sql
+2021-03-01 00:27:01.030983 (MainThread): Partial parsing not enabled
+2021-03-01 00:27:01.142661 (MainThread): Acquiring new bigquery connection "model.my_new_project.pages".
+2021-03-01 00:27:01.325373 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_user_stitching".
+2021-03-01 00:27:01.339719 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions".
+2021-03-01 00:27:01.363875 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions__stitched".
+2021-03-01 00:27:01.379429 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions__initial".
+2021-03-01 00:27:01.405493 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_page_views__sessionized".
+2021-03-01 00:27:01.454680 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_page_views".
+2021-03-01 00:27:01.554240 (MainThread): Acquiring new bigquery connection "analysis.segment.audience_overview".
+2021-03-01 00:27:01.999577 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.prod
+
+2021-03-01 00:27:02.012063 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '675c01a6-17b9-41e1-bbab-79cc3c2d8cf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a4b78b0>]}
+2021-03-01 00:27:02.140009 (MainThread): Found 7 models, 16 tests, 0 snapshots, 1 analysis, 327 macros, 0 operations, 1 seed file, 0 sources, 0 exposures
+2021-03-01 00:27:02.142713 (MainThread): 
+2021-03-01 00:27:02.143136 (MainThread): Acquiring new bigquery connection "master".
+2021-03-01 00:27:02.145182 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_fivetran-data-culture-big-vv9p".
+2021-03-01 00:27:02.145393 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-03-01 00:27:02.620763 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_fivetran-data-culture-big-vv9p_dbt_jkaplan".
+2021-03-01 00:27:02.621017 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-03-01 00:27:02.624850 (ThreadPoolExecutor-1_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2021-03-01 00:27:02.625316 (ThreadPoolExecutor-1_0): unclosed <socket.socket fd=12, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.94', 50430), raddr=('172.217.14.234', 443)>
+2021-03-01 00:27:02.625460 (ThreadPoolExecutor-1_0): unclosed <socket.socket fd=11, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.94', 50429), raddr=('142.251.33.106', 443)>
+2021-03-01 00:27:03.072779 (MainThread): 17:27:03 | Concurrency: 4 threads (target='dev')
+2021-03-01 00:27:03.073228 (MainThread): 17:27:03 | 
+2021-03-01 00:27:03.078874 (Thread-1): Began running node seed.segment.referrer_mapping
+2021-03-01 00:27:03.080892 (Thread-1): 17:27:03 | 1 of 1 START seed file dbt_jkaplan.referrer_mapping.................. [RUN]
+2021-03-01 00:27:03.081455 (Thread-1): Acquiring new bigquery connection "seed.segment.referrer_mapping".
+2021-03-01 00:27:03.081672 (Thread-1): finished collecting timing info
+2021-03-01 00:27:03.134915 (Thread-1): Opening a new connection, currently in state closed
+2021-03-01 00:27:03.138738 (Thread-1): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2021-03-01 00:27:07.201376 (Thread-1): Writing runtime SQL for node "seed.segment.referrer_mapping"
+2021-03-01 00:27:07.214122 (Thread-1): finished collecting timing info
+2021-03-01 00:27:07.215065 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '675c01a6-17b9-41e1-bbab-79cc3c2d8cf9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109ff3790>]}
+2021-03-01 00:27:07.215356 (Thread-1): 17:27:07 | 1 of 1 OK loaded seed file dbt_jkaplan.referrer_mapping.............. [CREATE 1803 in 4.13s]
+2021-03-01 00:27:07.215510 (Thread-1): Finished running node seed.segment.referrer_mapping
+2021-03-01 00:27:07.216912 (MainThread): Acquiring new bigquery connection "master".
+2021-03-01 00:27:07.217267 (MainThread): 17:27:07 | 
+2021-03-01 00:27:07.217402 (MainThread): 17:27:07 | Finished running 1 seed in 5.07s.
+2021-03-01 00:27:07.217508 (MainThread): Connection 'master' was properly closed.
+2021-03-01 00:27:07.217603 (MainThread): Connection 'seed.segment.referrer_mapping' was properly closed.
+2021-03-01 00:27:07.321938 (MainThread): 
+2021-03-01 00:27:07.322103 (MainThread): Completed successfully
+2021-03-01 00:27:07.322208 (MainThread): 
+Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+2021-03-01 00:27:07.322376 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a53ddf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a08a100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a08a8b0>]}
+2021-03-01 00:27:07.322559 (MainThread): Flushing usage events
+2021-03-01 00:27:45.160141 (MainThread): Running with dbt=0.19.0
+2021-03-01 00:27:45.990691 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/jonahkaplan/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-03-01 00:27:45.992398 (MainThread): Tracking: tracking
+2021-03-01 00:27:46.002824 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10593f370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c35460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c35640>]}
+2021-03-01 00:27:46.069960 (MainThread): Partial parsing not enabled
+2021-03-01 00:27:46.071369 (MainThread): Parsing macros/etc.sql
+2021-03-01 00:27:46.074316 (MainThread): Parsing macros/catalog.sql
+2021-03-01 00:27:46.081232 (MainThread): Parsing macros/adapters.sql
+2021-03-01 00:27:46.103165 (MainThread): Parsing macros/materializations/seed.sql
+2021-03-01 00:27:46.107382 (MainThread): Parsing macros/materializations/view.sql
+2021-03-01 00:27:46.112303 (MainThread): Parsing macros/materializations/table.sql
+2021-03-01 00:27:46.125667 (MainThread): Parsing macros/materializations/copy.sql
+2021-03-01 00:27:46.131417 (MainThread): Parsing macros/materializations/incremental.sql
+2021-03-01 00:27:46.148750 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-03-01 00:27:46.153125 (MainThread): Parsing macros/core.sql
+2021-03-01 00:27:46.158712 (MainThread): Parsing macros/materializations/helpers.sql
+2021-03-01 00:27:46.170420 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-03-01 00:27:46.173694 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-03-01 00:27:46.197137 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-03-01 00:27:46.234237 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-03-01 00:27:46.261880 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-03-01 00:27:46.264449 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-03-01 00:27:46.272882 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-03-01 00:27:46.290719 (MainThread): Parsing macros/materializations/table/table.sql
+2021-03-01 00:27:46.300373 (MainThread): Parsing macros/materializations/view/view.sql
+2021-03-01 00:27:46.309055 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-03-01 00:27:46.315278 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-03-01 00:27:46.317073 (MainThread): Parsing macros/etc/query.sql
+2021-03-01 00:27:46.318689 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-03-01 00:27:46.320924 (MainThread): Parsing macros/etc/datetime.sql
+2021-03-01 00:27:46.331395 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-03-01 00:27:46.334274 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-03-01 00:27:46.336897 (MainThread): Parsing macros/adapters/common.sql
+2021-03-01 00:27:46.386377 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-03-01 00:27:46.389293 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-03-01 00:27:46.391331 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-03-01 00:27:46.393626 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-03-01 00:27:46.406118 (MainThread): Parsing macros/cross_db_utils/except.sql
+2021-03-01 00:27:46.409006 (MainThread): Parsing macros/cross_db_utils/replace.sql
+2021-03-01 00:27:46.413110 (MainThread): Parsing macros/cross_db_utils/concat.sql
+2021-03-01 00:27:46.418773 (MainThread): Parsing macros/cross_db_utils/datatypes.sql
+2021-03-01 00:27:46.430192 (MainThread): Parsing macros/cross_db_utils/_is_relation.sql
+2021-03-01 00:27:46.433365 (MainThread): Parsing macros/cross_db_utils/length.sql
+2021-03-01 00:27:46.436542 (MainThread): Parsing macros/cross_db_utils/dateadd.sql
+2021-03-01 00:27:46.441681 (MainThread): Parsing macros/cross_db_utils/intersect.sql
+2021-03-01 00:27:46.444199 (MainThread): Parsing macros/cross_db_utils/right.sql
+2021-03-01 00:27:46.448455 (MainThread): Parsing macros/cross_db_utils/datediff.sql
+2021-03-01 00:27:46.461829 (MainThread): Parsing macros/cross_db_utils/safe_cast.sql
+2021-03-01 00:27:46.464940 (MainThread): Parsing macros/cross_db_utils/hash.sql
+2021-03-01 00:27:46.467378 (MainThread): Parsing macros/cross_db_utils/identifier.sql
+2021-03-01 00:27:46.470164 (MainThread): Parsing macros/cross_db_utils/position.sql
+2021-03-01 00:27:46.472802 (MainThread): Parsing macros/cross_db_utils/literal.sql
+2021-03-01 00:27:46.474549 (MainThread): Parsing macros/cross_db_utils/current_timestamp.sql
+2021-03-01 00:27:46.479097 (MainThread): Parsing macros/cross_db_utils/width_bucket.sql
+2021-03-01 00:27:46.486022 (MainThread): Parsing macros/cross_db_utils/_get_utils_namespaces.sql
+2021-03-01 00:27:46.487629 (MainThread): Parsing macros/cross_db_utils/last_day.sql
+2021-03-01 00:27:46.492964 (MainThread): Parsing macros/cross_db_utils/split_part.sql
+2021-03-01 00:27:46.496426 (MainThread): Parsing macros/cross_db_utils/date_trunc.sql
+2021-03-01 00:27:46.499190 (MainThread): Parsing macros/cross_db_utils/_is_ephemeral.sql
+2021-03-01 00:27:46.502122 (MainThread): Parsing macros/materializations/insert_by_period_materialization.sql
+2021-03-01 00:27:46.532556 (MainThread): Parsing macros/logger/pretty_log_format.sql
+2021-03-01 00:27:46.534274 (MainThread): Parsing macros/logger/pretty_time.sql
+2021-03-01 00:27:46.536111 (MainThread): Parsing macros/logger/log_info.sql
+2021-03-01 00:27:46.537769 (MainThread): Parsing macros/datetime/date_spine.sql
+2021-03-01 00:27:46.543542 (MainThread): Parsing macros/web/get_url_host.sql
+2021-03-01 00:27:46.546459 (MainThread): Parsing macros/web/get_url_path.sql
+2021-03-01 00:27:46.550797 (MainThread): Parsing macros/web/get_url_parameter.sql
+2021-03-01 00:27:46.553295 (MainThread): Parsing macros/geo/haversine_distance.sql
+2021-03-01 00:27:46.555592 (MainThread): Parsing macros/schema_tests/equal_rowcount.sql
+2021-03-01 00:27:46.558309 (MainThread): Parsing macros/schema_tests/relationships_where.sql
+2021-03-01 00:27:46.561771 (MainThread): Parsing macros/schema_tests/recency.sql
+2021-03-01 00:27:46.564416 (MainThread): Parsing macros/schema_tests/not_constant.sql
+2021-03-01 00:27:46.567423 (MainThread): Parsing macros/schema_tests/test_unique_where.sql
+2021-03-01 00:27:46.570793 (MainThread): Parsing macros/schema_tests/at_least_one.sql
+2021-03-01 00:27:46.573300 (MainThread): Parsing macros/schema_tests/unique_combination_of_columns.sql
+2021-03-01 00:27:46.577980 (MainThread): Parsing macros/schema_tests/cardinality_equality.sql
+2021-03-01 00:27:46.581217 (MainThread): Parsing macros/schema_tests/expression_is_true.sql
+2021-03-01 00:27:46.583673 (MainThread): Parsing macros/schema_tests/test_not_null_where.sql
+2021-03-01 00:27:46.586538 (MainThread): Parsing macros/schema_tests/equality.sql
+2021-03-01 00:27:46.591420 (MainThread): Parsing macros/schema_tests/mutually_exclusive_ranges.sql
+2021-03-01 00:27:46.599721 (MainThread): Parsing macros/sql/nullcheck_table.sql
+2021-03-01 00:27:46.602952 (MainThread): Parsing macros/sql/get_relations_by_pattern.sql
+2021-03-01 00:27:46.608285 (MainThread): Parsing macros/sql/generate_series.sql
+2021-03-01 00:27:46.615037 (MainThread): Parsing macros/sql/get_relations_by_prefix.sql
+2021-03-01 00:27:46.620598 (MainThread): Parsing macros/sql/get_tables_by_prefix_sql.sql
+2021-03-01 00:27:46.623303 (MainThread): Parsing macros/sql/star.sql
+2021-03-01 00:27:46.629364 (MainThread): Parsing macros/sql/unpivot.sql
+2021-03-01 00:27:46.639440 (MainThread): Parsing macros/sql/union.sql
+2021-03-01 00:27:46.651426 (MainThread): Parsing macros/sql/groupby.sql
+2021-03-01 00:27:46.653521 (MainThread): Parsing macros/sql/surrogate_key.sql
+2021-03-01 00:27:46.658253 (MainThread): Parsing macros/sql/safe_add.sql
+2021-03-01 00:27:46.661019 (MainThread): Parsing macros/sql/nullcheck.sql
+2021-03-01 00:27:46.663887 (MainThread): Parsing macros/sql/get_tables_by_pattern_sql.sql
+2021-03-01 00:27:46.672620 (MainThread): Parsing macros/sql/get_column_values.sql
+2021-03-01 00:27:46.678947 (MainThread): Parsing macros/sql/pivot.sql
+2021-03-01 00:27:46.684732 (MainThread): Parsing macros/sql/get_query_results_as_dict.sql
+2021-03-01 00:27:46.694932 (MainThread): Partial parsing not enabled
+2021-03-01 00:27:46.801876 (MainThread): Acquiring new bigquery connection "model.my_new_project.pages".
+2021-03-01 00:27:46.998713 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_user_stitching".
+2021-03-01 00:27:47.013762 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions".
+2021-03-01 00:27:47.041253 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions__stitched".
+2021-03-01 00:27:47.058075 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions__initial".
+2021-03-01 00:27:47.086342 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_page_views__sessionized".
+2021-03-01 00:27:47.134533 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_page_views".
+2021-03-01 00:27:47.235767 (MainThread): Acquiring new bigquery connection "analysis.segment.audience_overview".
+2021-03-01 00:27:47.697001 (MainThread): [WARNING]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.prod
+
+2021-03-01 00:27:47.711389 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c9e25039-b0d5-40eb-bbd8-7197ce099671', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107261ac0>]}
+2021-03-01 00:27:47.832502 (MainThread): Found 7 models, 16 tests, 0 snapshots, 1 analysis, 327 macros, 0 operations, 1 seed file, 0 sources, 0 exposures
+2021-03-01 00:27:47.834259 (MainThread): 
+2021-03-01 00:27:47.834584 (MainThread): Acquiring new bigquery connection "master".
+2021-03-01 00:27:47.843224 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_fivetran-data-culture-big-vv9p".
+2021-03-01 00:27:47.843408 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-03-01 00:27:49.728601 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_fivetran-data-culture-big-vv9p_dbt_jkaplan".
+2021-03-01 00:27:49.728858 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-03-01 00:27:49.732767 (ThreadPoolExecutor-1_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2021-03-01 00:27:50.135083 (MainThread): 17:27:50 | Concurrency: 4 threads (target='dev')
+2021-03-01 00:27:50.135395 (MainThread): 17:27:50 | 
+2021-03-01 00:27:50.140312 (Thread-1): Began running node model.segment.segment_web_page_views
+2021-03-01 00:27:50.140656 (Thread-2): Began running node model.my_new_project.pages
+2021-03-01 00:27:50.142394 (Thread-1): 17:27:50 | 1 of 7 START view model dbt_jkaplan.segment_web_page_views........... [RUN]
+2021-03-01 00:27:50.144219 (Thread-2): 17:27:50 | 2 of 7 START view model dbt_jkaplan.pages............................ [RUN]
+2021-03-01 00:27:50.144837 (Thread-1): Acquiring new bigquery connection "model.segment.segment_web_page_views".
+2021-03-01 00:27:50.145365 (Thread-2): Acquiring new bigquery connection "model.my_new_project.pages".
+2021-03-01 00:27:50.145507 (Thread-1): Compiling model.segment.segment_web_page_views
+2021-03-01 00:27:50.145649 (Thread-2): Compiling model.my_new_project.pages
+2021-03-01 00:27:50.175876 (Thread-2): Writing injected SQL for node "model.my_new_project.pages"
+2021-03-01 00:27:50.185347 (Thread-1): Writing injected SQL for node "model.segment.segment_web_page_views"
+2021-03-01 00:27:50.186159 (Thread-2): finished collecting timing info
+2021-03-01 00:27:50.192632 (Thread-1): finished collecting timing info
+2021-03-01 00:27:50.233854 (Thread-2): finished collecting timing info
+2021-03-01 00:27:50.243476 (Thread-1): Writing runtime SQL for node "model.segment.segment_web_page_views"
+2021-03-01 00:27:50.244113 (Thread-1): Opening a new connection, currently in state closed
+2021-03-01 00:27:50.247983 (Thread-1): On model.segment.segment_web_page_views: /* {"app": "dbt", "dbt_version": "0.19.0", "profile_name": "my_new_project", "target_name": "dev", "node_id": "model.segment.segment_web_page_views"} */
+
+
+  create or replace view `fivetran-data-culture-big-vv9p`.`dbt_jkaplan`.`segment_web_page_views`
+  OPTIONS()
+  as with source as (
+
+    select * from dbt_jkaplan.pages
+
+),
+
+renamed as (
+
+    select
+
+        id as page_view_id,
+        anonymous_id,
+        user_id,
+
+        received_at as received_at_tstamp,
+        sent_at as sent_at_tstamp,
+        timestamp as tstamp,
+
+        url as page_url,
+        
+    safe_cast(
+
+    split(
+        
+
+    split(
+        
+
+    replace(
+        
+
+    replace(
+        url,
+        'http://',
+        ''
+    )
+    
+
+,
+        'https://',
+        ''
+    )
+    
+
+,
+        '/'
+        )[safe_offset(0)]
+
+,
+        '?'
+        )[safe_offset(0)]
+
+ as 
+    string
+)
+ as page_url_host,
+        path as page_url_path,
+        title as page_title,
+        search as page_url_query,
+
+        referrer,
+        replace(
+            
+    safe_cast(
+
+    split(
+        
+
+    split(
+        
+
+    replace(
+        
+
+    replace(
+        referrer,
+        'http://',
+        ''
+    )
+    
+
+,
+        'https://',
+        ''
+    )
+    
+
+,
+        '/'
+        )[safe_offset(0)]
+
+,
+        '?'
+        )[safe_offset(0)]
+
+ as 
+    string
+)
+,
+            'www.',
+            ''
+        ) as referrer_host,
+
+        context_campaign_source as utm_source,
+        context_campaign_medium as utm_medium,
+        context_campaign_name as utm_campaign,
+        context_campaign_term as utm_term,
+        context_campaign_content as utm_content,
+        nullif(
+
+    split(
+        
+
+    split(
+        url,
+        'gclid='
+        )[safe_offset(1)]
+
+,
+        '&'
+        )[safe_offset(0)]
+
+,'') as gclid,
+        context_ip as ip,
+        context_user_agent as user_agent,
+        case
+            when lower(context_user_agent) like '%android%' then 'Android'
+            else replace(
+                
+
+    split(
+        
+
+    split(
+        context_user_agent,
+        '('
+        )[safe_offset(1)]
+
+,
+        ' '
+        )[safe_offset(0)]
+
+,
+                ';', '')
+        end as device
+
+        
+
+    from source
+
+),
+
+final as (
+
+    select
+        *,
+        case
+            when device = 'iPhone' then 'iPhone'
+            when device = 'Android' then 'Android'
+            when device in ('iPad', 'iPod') then 'Tablet'
+            when device in ('Windows', 'Macintosh', 'X11') then 'Desktop'
+            else 'Uncategorized'
+        end as device_category
+    from renamed
+
+)
+
+select * from final;
+
+
+2021-03-01 00:27:50.240816 (Thread-2): Compilation Error in model pages (models/prod/pages.sql)
+  Trying to create view `fivetran-data-culture-big-vv9p`.`dbt_jkaplan`.`pages`, but it currently exists as a table. Either drop `fivetran-data-culture-big-vv9p`.`dbt_jkaplan`.`pages` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros/materializations/view.sql)
+  > called by macro handle_existing_table (macros/materializations/view/create_or_replace_view.sql)
+  > called by macro create_or_replace_view (macros/materializations/view/create_or_replace_view.sql)
+  > called by macro materialization_view_bigquery (macros/materializations/view.sql)
+  > called by model pages (models/prod/pages.sql)
+Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 344, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 287, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/base.py", line 389, in run
+    return self.execute(compiled_node, manifest)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/run.py", line 247, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 22, in macro
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 50, in macro
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 22, in macro
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 327, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/clients/jinja.py", line 257, in call_macro
+    return macro(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 29, in macro
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/jinja2/sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/jinja2/runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 1008, in inner
+    raise exc
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 1005, in inner
+    return func(*args, **kwargs)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 669, in relation_wrong_type
+    raise_compiler_error(
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 435, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in model pages (models/prod/pages.sql)
+  Trying to create view `fivetran-data-culture-big-vv9p`.`dbt_jkaplan`.`pages`, but it currently exists as a table. Either drop `fivetran-data-culture-big-vv9p`.`dbt_jkaplan`.`pages` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+  
+  > in macro bigquery__handle_existing_table (macros/materializations/view.sql)
+  > called by macro handle_existing_table (macros/materializations/view/create_or_replace_view.sql)
+  > called by macro create_or_replace_view (macros/materializations/view/create_or_replace_view.sql)
+  > called by macro materialization_view_bigquery (macros/materializations/view.sql)
+  > called by model pages (models/prod/pages.sql)
+2021-03-01 00:27:50.253395 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c9e25039-b0d5-40eb-bbd8-7197ce099671', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073275b0>]}
+2021-03-01 00:27:50.254524 (Thread-2): 17:27:50 | 2 of 7 ERROR creating view model dbt_jkaplan.pages................... [ERROR in 0.11s]
+2021-03-01 00:27:50.254795 (Thread-2): Finished running node model.my_new_project.pages
+2021-03-01 00:27:51.505352 (Thread-1): unclosed <socket.socket fd=14, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.94', 50440), raddr=('172.217.14.234', 443)>
+2021-03-01 00:27:51.507622 (Thread-1): unclosed <socket.socket fd=13, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.1.94', 50439), raddr=('142.251.33.106', 443)>
+2021-03-01 00:27:51.517973 (Thread-1): finished collecting timing info
+2021-03-01 00:27:51.518864 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c9e25039-b0d5-40eb-bbd8-7197ce099671', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107327130>]}
+2021-03-01 00:27:51.520246 (Thread-1): 17:27:51 | 1 of 7 OK created view model dbt_jkaplan.segment_web_page_views...... [OK in 1.37s]
+2021-03-01 00:27:51.520431 (Thread-1): Finished running node model.segment.segment_web_page_views
+2021-03-01 00:27:51.521075 (Thread-4): Began running node model.segment.segment_web_page_views__sessionized
+2021-03-01 00:27:51.522396 (Thread-4): 17:27:51 | 3 of 7 START incremental model dbt_jkaplan.segment_web_page_views__sessionized [RUN]
+2021-03-01 00:27:51.522733 (Thread-3): Began running node model.segment.segment_web_user_stitching
+2021-03-01 00:27:51.524056 (Thread-3): 17:27:51 | 4 of 7 START table model dbt_jkaplan.segment_web_user_stitching...... [RUN]
+2021-03-01 00:27:51.524534 (Thread-4): Acquiring new bigquery connection "model.segment.segment_web_page_views__sessionized".
+2021-03-01 00:27:51.524839 (Thread-3): Acquiring new bigquery connection "model.segment.segment_web_user_stitching".
+2021-03-01 00:27:51.525003 (Thread-4): Compiling model.segment.segment_web_page_views__sessionized
+2021-03-01 00:27:51.525135 (Thread-3): Compiling model.segment.segment_web_user_stitching
+2021-03-01 00:27:51.545756 (Thread-3): Writing injected SQL for node "model.segment.segment_web_user_stitching"
+2021-03-01 00:27:51.549554 (Thread-4): Opening a new connection, currently in state init
+2021-03-01 00:27:51.550213 (Thread-3): finished collecting timing info
+2021-03-01 00:27:51.571497 (Thread-4): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2021-03-01 00:27:51.589844 (Thread-3): Writing runtime SQL for node "model.segment.segment_web_user_stitching"
+2021-03-01 00:27:51.590451 (Thread-3): Opening a new connection, currently in state init
+2021-03-01 00:27:51.594356 (Thread-3): On model.segment.segment_web_user_stitching: /* {"app": "dbt", "dbt_version": "0.19.0", "profile_name": "my_new_project", "target_name": "dev", "node_id": "model.segment.segment_web_user_stitching"} */
+
+
+  create or replace table `fivetran-data-culture-big-vv9p`.`dbt_jkaplan`.`segment_web_user_stitching`
+  
+  
+  OPTIONS()
+  as (
+    
+
+with events as (
+
+    select * from `fivetran-data-culture-big-vv9p`.`dbt_jkaplan`.`segment_web_page_views`
+
+),
+
+mapping as (
+
+    select distinct
+
+        anonymous_id,
+
+        last_value(user_id ignore nulls) over (
+            partition by anonymous_id
+            order by tstamp
+            rows between unbounded preceding and unbounded following
+        ) as user_id,
+
+        min(tstamp) over (
+            partition by anonymous_id
+        ) as first_seen_at,
+
+        max(tstamp) over (
+            partition by anonymous_id
+        ) as last_seen_at
+
+    from events
+
+)
+
+select * from mapping
+  );
+    
+2021-03-01 00:27:51.926775 (Thread-4): Writing injected SQL for node "model.segment.segment_web_page_views__sessionized"
+2021-03-01 00:27:51.927606 (Thread-4): finished collecting timing info
+2021-03-01 00:27:51.963841 (Thread-4): Writing runtime SQL for node "model.segment.segment_web_page_views__sessionized"
+2021-03-01 00:27:51.964395 (Thread-4): On model.segment.segment_web_page_views__sessionized: /* {"app": "dbt", "dbt_version": "0.19.0", "profile_name": "my_new_project", "target_name": "dev", "node_id": "model.segment.segment_web_page_views__sessionized"} */
+
+
+  create or replace table `fivetran-data-culture-big-vv9p`.`dbt_jkaplan`.`segment_web_page_views__sessionized`
+  
+  
+  OPTIONS()
+  as (
+    
+
+
+
+with pageviews as (
+
+    select * from `fivetran-data-culture-big-vv9p`.`dbt_jkaplan`.`segment_web_page_views`
+
+    
+
+),
+
+numbered as (
+
+    --This CTE is responsible for assigning an all-time page view number for a
+    --given anonymous_id. We don't need to do this across devices because the
+    --whole point of this field is for sessionization, and sessions can't span
+    --multiple devices.
+
+    select
+
+        *,
+
+        row_number() over (
+            partition by anonymous_id
+            order by tstamp
+            ) as page_view_number
+
+    from pageviews
+
+),
+
+lagged as (
+
+    --This CTE is responsible for simply grabbing the last value of `tstamp`.
+    --We'll use this downstream to do timestamp math--it's how we determine the
+    --period of inactivity.
+
+    select
+
+        *,
+
+        lag(tstamp) over (
+            partition by anonymous_id
+            order by page_view_number
+            ) as previous_tstamp
+
+    from numbered
+
+),
+
+diffed as (
+
+    --This CTE simply calculates `period_of_inactivity`.
+
+    select
+        *,
+        
+
+    datetime_diff(
+        cast(tstamp as datetime),
+        cast(previous_tstamp as datetime),
+        second
+    )
+
+ as period_of_inactivity
+    from lagged
+
+),
+
+new_sessions as (
+
+    --This CTE calculates a single 1/0 field--if the period of inactivity prior
+    --to this page view was greater than 30 minutes, the value is 1, otherwise
+    --it's 0. We'll use this to calculate the user's session #.
+
+    select
+        *,
+        case
+            when period_of_inactivity <= 30 * 60 then 0
+            else 1
+        end as new_session
+    from diffed
+
+),
+
+session_numbers as (
+
+    --This CTE calculates a user's session (1, 2, 3) number from `new_session`.
+    --This single field is the entire point of the entire prior series of
+    --calculations.
+
+    select
+
+        *,
+
+        sum(new_session) over (
+            partition by anonymous_id
+            order by page_view_number
+            rows between unbounded preceding and current row
+            ) as session_number
+
+    from new_sessions
+
+),
+
+session_ids as (
+
+    --This CTE assigns a globally unique session id based on the combination of
+    --`anonymous_id` and `session_number`.
+
+    select
+
+        `page_view_id`,
+  `anonymous_id`,
+  `user_id`,
+  `received_at_tstamp`,
+  `sent_at_tstamp`,
+  `tstamp`,
+  `page_url`,
+  `page_url_host`,
+  `page_url_path`,
+  `page_title`,
+  `page_url_query`,
+  `referrer`,
+  `referrer_host`,
+  `utm_source`,
+  `utm_medium`,
+  `utm_campaign`,
+  `utm_term`,
+  `utm_content`,
+  `gclid`,
+  `ip`,
+  `user_agent`,
+  `device`,
+  `device_category`,
+        page_view_number,
+        to_hex(md5(cast(concat(coalesce(cast(anonymous_id as 
+    string
+), ''), '-', coalesce(cast(session_number as 
+    string
+), '')) as 
+    string
+))) as session_id
+
+    from session_numbers
+
+)
+
+select * from session_ids
+  );
+  
+2021-03-01 00:28:09.798998 (Thread-3): finished collecting timing info
+2021-03-01 00:28:09.800325 (Thread-3): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c9e25039-b0d5-40eb-bbd8-7197ce099671', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107005e80>]}
+2021-03-01 00:28:09.802414 (Thread-3): 17:28:09 | 4 of 7 OK created table model dbt_jkaplan.segment_web_user_stitching. [CREATE TABLE (1.5m rows, 488.2 MB processed) in 18.28s]
+2021-03-01 00:28:09.802692 (Thread-3): Finished running node model.segment.segment_web_user_stitching
+2021-03-01 00:28:31.386964 (Thread-4): finished collecting timing info
+2021-03-01 00:28:31.388343 (Thread-4): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c9e25039-b0d5-40eb-bbd8-7197ce099671', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107005f10>]}
+2021-03-01 00:28:31.390089 (Thread-4): 17:28:31 | 3 of 7 OK created incremental model dbt_jkaplan.segment_web_page_views__sessionized [CREATE TABLE (11.3m rows, 6.2 GB processed) in 39.86s]
+2021-03-01 00:28:31.390320 (Thread-4): Finished running node model.segment.segment_web_page_views__sessionized
+2021-03-01 00:28:31.391098 (Thread-1): Began running node model.segment.segment_web_sessions__initial
+2021-03-01 00:28:31.392864 (Thread-1): 17:28:31 | 5 of 7 START incremental model dbt_jkaplan.segment_web_sessions__initial [RUN]
+2021-03-01 00:28:31.393334 (Thread-1): Acquiring new bigquery connection "model.segment.segment_web_sessions__initial".
+2021-03-01 00:28:31.393523 (Thread-1): Compiling model.segment.segment_web_sessions__initial
+2021-03-01 00:28:31.417688 (Thread-1): Writing injected SQL for node "model.segment.segment_web_sessions__initial"
+2021-03-01 00:28:31.418176 (Thread-1): finished collecting timing info
+2021-03-01 00:28:31.423980 (Thread-1): Writing runtime SQL for node "model.segment.segment_web_sessions__initial"
+2021-03-01 00:28:31.424401 (Thread-1): Opening a new connection, currently in state closed
+2021-03-01 00:28:31.428445 (Thread-1): On model.segment.segment_web_sessions__initial: /* {"app": "dbt", "dbt_version": "0.19.0", "profile_name": "my_new_project", "target_name": "dev", "node_id": "model.segment.segment_web_sessions__initial"} */
+
+
+  create or replace table `fivetran-data-culture-big-vv9p`.`dbt_jkaplan`.`segment_web_sessions__initial`
+  
+  
+  OPTIONS()
+  as (
+    
+
+
+
+
+
+
+
+
+
+
+
+with pageviews_sessionized as (
+
+    select * from `fivetran-data-culture-big-vv9p`.`dbt_jkaplan`.`segment_web_page_views__sessionized`
+
+    
+
+),
+
+referrer_mapping as (
+
+    select * from `fivetran-data-culture-big-vv9p`.`dbt_jkaplan`.`referrer_mapping`
+
+),
+
+agg as (
+
+    select distinct
+
+        session_id,
+        anonymous_id,
+        min(tstamp) over ( partition by session_id ) as session_start_tstamp,
+        max(tstamp) over ( partition by session_id ) as session_end_tstamp,
+        count(*) over ( partition by session_id ) as page_views,
+
+        
+        first_value(utm_source) over (
+    partition by session_id
+    order by page_view_number
+    rows between unbounded preceding and unbounded following
+    ) as utm_source,
+        
+        first_value(utm_content) over (
+    partition by session_id
+    order by page_view_number
+    rows between unbounded preceding and unbounded following
+    ) as utm_content,
+        
+        first_value(utm_medium) over (
+    partition by session_id
+    order by page_view_number
+    rows between unbounded preceding and unbounded following
+    ) as utm_medium,
+        
+        first_value(utm_campaign) over (
+    partition by session_id
+    order by page_view_number
+    rows between unbounded preceding and unbounded following
+    ) as utm_campaign,
+        
+        first_value(utm_term) over (
+    partition by session_id
+    order by page_view_number
+    rows between unbounded preceding and unbounded following
+    ) as utm_term,
+        
+        first_value(gclid) over (
+    partition by session_id
+    order by page_view_number
+    rows between unbounded preceding and unbounded following
+    ) as gclid,
+        
+        first_value(page_url) over (
+    partition by session_id
+    order by page_view_number
+    rows between unbounded preceding and unbounded following
+    ) as first_page_url,
+        
+        first_value(page_url_host) over (
+    partition by session_id
+    order by page_view_number
+    rows between unbounded preceding and unbounded following
+    ) as first_page_url_host,
+        
+        first_value(page_url_path) over (
+    partition by session_id
+    order by page_view_number
+    rows between unbounded preceding and unbounded following
+    ) as first_page_url_path,
+        
+        first_value(page_url_query) over (
+    partition by session_id
+    order by page_view_number
+    rows between unbounded preceding and unbounded following
+    ) as first_page_url_query,
+        
+        first_value(referrer) over (
+    partition by session_id
+    order by page_view_number
+    rows between unbounded preceding and unbounded following
+    ) as referrer,
+        
+        first_value(referrer_host) over (
+    partition by session_id
+    order by page_view_number
+    rows between unbounded preceding and unbounded following
+    ) as referrer_host,
+        
+        first_value(device) over (
+    partition by session_id
+    order by page_view_number
+    rows between unbounded preceding and unbounded following
+    ) as device,
+        
+        first_value(device_category) over (
+    partition by session_id
+    order by page_view_number
+    rows between unbounded preceding and unbounded following
+    ) as device_category,
+        
+
+        
+        last_value(page_url) over (
+    partition by session_id
+    order by page_view_number
+    rows between unbounded preceding and unbounded following
+    ) as last_page_url,
+        
+        last_value(page_url_host) over (
+    partition by session_id
+    order by page_view_number
+    rows between unbounded preceding and unbounded following
+    ) as last_page_url_host,
+        
+        last_value(page_url_path) over (
+    partition by session_id
+    order by page_view_number
+    rows between unbounded preceding and unbounded following
+    ) as last_page_url_path,
+        
+        last_value(page_url_query) over (
+    partition by session_id
+    order by page_view_number
+    rows between unbounded preceding and unbounded following
+    ) as last_page_url_query
+        
+
+    from pageviews_sessionized
+
+),
+
+diffs as (
+
+    select
+
+        *,
+
+        
+
+    datetime_diff(
+        cast(session_end_tstamp as datetime),
+        cast(session_start_tstamp as datetime),
+        second
+    )
+
+ as duration_in_s
+
+    from agg
+
+),
+
+tiers as (
+
+    select
+
+        *,
+
+        case
+            when duration_in_s between 0 and 9 then '0s to 9s'
+            when duration_in_s between 10 and 29 then '10s to 29s'
+            when duration_in_s between 30 and 59 then '30s to 59s'
+            when duration_in_s > 59 then '60s or more'
+            else null
+        end as duration_in_s_tier
+
+    from diffs
+
+),
+
+mapped as (
+
+    select
+        tiers.*,
+        referrer_mapping.medium as referrer_medium,
+        referrer_mapping.source as referrer_source
+
+    from tiers
+
+    left join referrer_mapping on tiers.referrer_host = referrer_mapping.host
+
+)
+
+select * from mapped
+  );
+  
+2021-03-01 00:29:02.224212 (Thread-1): finished collecting timing info
+2021-03-01 00:29:02.226489 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c9e25039-b0d5-40eb-bbd8-7197ce099671', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d52c10>]}
+2021-03-01 00:29:02.228964 (Thread-1): 17:29:02 | 5 of 7 OK created incremental model dbt_jkaplan.segment_web_sessions__initial [CREATE TABLE (3.1m rows, 4.5 GB processed) in 30.83s]
+2021-03-01 00:29:02.229236 (Thread-1): Finished running node model.segment.segment_web_sessions__initial
+2021-03-01 00:29:02.229983 (Thread-3): Began running node model.segment.segment_web_sessions__stitched
+2021-03-01 00:29:02.231769 (Thread-3): 17:29:02 | 6 of 7 START incremental model dbt_jkaplan.segment_web_sessions__stitched [RUN]
+2021-03-01 00:29:02.232273 (Thread-3): Acquiring new bigquery connection "model.segment.segment_web_sessions__stitched".
+2021-03-01 00:29:02.232420 (Thread-3): Compiling model.segment.segment_web_sessions__stitched
+2021-03-01 00:29:02.246150 (Thread-3): Writing injected SQL for node "model.segment.segment_web_sessions__stitched"
+2021-03-01 00:29:02.246640 (Thread-3): finished collecting timing info
+2021-03-01 00:29:02.252889 (Thread-3): Writing runtime SQL for node "model.segment.segment_web_sessions__stitched"
+2021-03-01 00:29:02.253310 (Thread-3): Opening a new connection, currently in state closed
+2021-03-01 00:29:02.257132 (Thread-3): On model.segment.segment_web_sessions__stitched: /* {"app": "dbt", "dbt_version": "0.19.0", "profile_name": "my_new_project", "target_name": "dev", "node_id": "model.segment.segment_web_sessions__stitched"} */
+
+
+  create or replace table `fivetran-data-culture-big-vv9p`.`dbt_jkaplan`.`segment_web_sessions__stitched`
+  
+  
+  OPTIONS()
+  as (
+    
+
+with sessions as (
+
+    select * from `fivetran-data-culture-big-vv9p`.`dbt_jkaplan`.`segment_web_sessions__initial`
+
+    
+
+),
+
+id_stitching as (
+
+    select * from `fivetran-data-culture-big-vv9p`.`dbt_jkaplan`.`segment_web_user_stitching`
+
+),
+
+joined as (
+
+    select
+
+        sessions.*,
+
+        coalesce(id_stitching.user_id, sessions.anonymous_id)
+            as blended_user_id
+
+    from sessions
+    left join id_stitching using (anonymous_id)
+
+)
+
+select * from joined
+  );
+  
+2021-03-01 00:29:32.078670 (Thread-3): finished collecting timing info
+2021-03-01 00:29:32.079991 (Thread-3): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c9e25039-b0d5-40eb-bbd8-7197ce099671', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106f8f700>]}
+2021-03-01 00:29:32.081742 (Thread-3): 17:29:32 | 6 of 7 OK created incremental model dbt_jkaplan.segment_web_sessions__stitched [CREATE TABLE (3.1m rows, 2.5 GB processed) in 29.85s]
+2021-03-01 00:29:32.081975 (Thread-3): Finished running node model.segment.segment_web_sessions__stitched
+2021-03-01 00:29:32.082530 (Thread-2): Began running node model.segment.segment_web_sessions
+2021-03-01 00:29:32.084133 (Thread-2): 17:29:32 | 7 of 7 START incremental model dbt_jkaplan.segment_web_sessions...... [RUN]
+2021-03-01 00:29:32.084839 (Thread-2): Acquiring new bigquery connection "model.segment.segment_web_sessions".
+2021-03-01 00:29:32.085048 (Thread-2): Compiling model.segment.segment_web_sessions
+2021-03-01 00:29:32.101053 (Thread-2): Writing injected SQL for node "model.segment.segment_web_sessions"
+2021-03-01 00:29:32.101541 (Thread-2): finished collecting timing info
+2021-03-01 00:29:32.107694 (Thread-2): Writing runtime SQL for node "model.segment.segment_web_sessions"
+2021-03-01 00:29:32.108134 (Thread-2): Opening a new connection, currently in state closed
+2021-03-01 00:29:32.111954 (Thread-2): On model.segment.segment_web_sessions: /* {"app": "dbt", "dbt_version": "0.19.0", "profile_name": "my_new_project", "target_name": "dev", "node_id": "model.segment.segment_web_sessions"} */
+
+
+  create or replace table `fivetran-data-culture-big-vv9p`.`dbt_jkaplan`.`segment_web_sessions`
+  
+  
+  OPTIONS()
+  as (
+    
+
+
+
+
+
+with sessions as (
+
+    select * from `fivetran-data-culture-big-vv9p`.`dbt_jkaplan`.`segment_web_sessions__stitched`
+
+    
+
+),
+
+
+
+windowed as (
+
+    select
+
+        *,
+
+        row_number() over (
+            partition by blended_user_id
+            order by sessions.session_start_tstamp
+            )
+            
+            as session_number
+
+    from sessions
+
+    
+
+
+)
+
+select * from windowed
+  );
+  
+2021-03-01 00:30:03.457552 (Thread-2): finished collecting timing info
+2021-03-01 00:30:03.461231 (Thread-2): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c9e25039-b0d5-40eb-bbd8-7197ce099671', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10702dc10>]}
+2021-03-01 00:30:03.463500 (Thread-2): 17:30:03 | 7 of 7 OK created incremental model dbt_jkaplan.segment_web_sessions. [CREATE TABLE (3.1m rows, 2.6 GB processed) in 31.38s]
+2021-03-01 00:30:03.463780 (Thread-2): Finished running node model.segment.segment_web_sessions
+2021-03-01 00:30:03.465793 (MainThread): Acquiring new bigquery connection "master".
+2021-03-01 00:30:03.466492 (MainThread): 17:30:03 | 
+2021-03-01 00:30:03.466739 (MainThread): 17:30:03 | Finished running 2 view models, 1 table model, 4 incremental models in 135.63s.
+2021-03-01 00:30:03.466943 (MainThread): Connection 'master' was properly closed.
+2021-03-01 00:30:03.467098 (MainThread): Connection 'model.segment.segment_web_sessions__initial' was properly closed.
+2021-03-01 00:30:03.467254 (MainThread): Connection 'model.segment.segment_web_sessions' was properly closed.
+2021-03-01 00:30:03.467374 (MainThread): Connection 'model.segment.segment_web_page_views__sessionized' was properly closed.
+2021-03-01 00:30:03.467492 (MainThread): Connection 'model.segment.segment_web_sessions__stitched' was properly closed.
+2021-03-01 00:30:03.583234 (MainThread): 
+2021-03-01 00:30:03.583482 (MainThread): Completed with 1 error and 0 warnings:
+2021-03-01 00:30:03.583694 (MainThread): 
+2021-03-01 00:30:03.583932 (MainThread): Compilation Error in model pages (models/prod/pages.sql)
+2021-03-01 00:30:03.584042 (MainThread):   Trying to create view `fivetran-data-culture-big-vv9p`.`dbt_jkaplan`.`pages`, but it currently exists as a table. Either drop `fivetran-data-culture-big-vv9p`.`dbt_jkaplan`.`pages` manually, or run dbt with `--full-refresh` and dbt will drop it for you.
+2021-03-01 00:30:03.584128 (MainThread):   
+2021-03-01 00:30:03.584209 (MainThread):   > in macro bigquery__handle_existing_table (macros/materializations/view.sql)
+2021-03-01 00:30:03.584289 (MainThread):   > called by macro handle_existing_table (macros/materializations/view/create_or_replace_view.sql)
+2021-03-01 00:30:03.584368 (MainThread):   > called by macro create_or_replace_view (macros/materializations/view/create_or_replace_view.sql)
+2021-03-01 00:30:03.584446 (MainThread):   > called by macro materialization_view_bigquery (macros/materializations/view.sql)
+2021-03-01 00:30:03.584524 (MainThread):   > called by model pages (models/prod/pages.sql)
+2021-03-01 00:30:03.584626 (MainThread): 
+Done. PASS=6 WARN=0 ERROR=1 SKIP=0 TOTAL=7
+2021-03-01 00:30:03.584817 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10717d4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10706a0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071e99a0>]}
+2021-03-01 00:30:03.585009 (MainThread): Flushing usage events
+2021-03-01 00:40:29.013365 (MainThread): Running with dbt=0.19.0
+2021-03-01 00:40:29.780328 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.seed.SeedTask'>, debug=False, defer=None, exclude=None, full_refresh=True, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/jonahkaplan/.dbt', project_dir=None, record_timing_info=None, rpc_method='seed', selector_name=None, show=False, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='seed', write_json=True)
+2021-03-01 00:40:29.782562 (MainThread): Tracking: tracking
+2021-03-01 00:40:29.790690 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c9dae50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c9e2880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c9e2760>]}
+2021-03-01 00:40:29.856816 (MainThread): Partial parsing not enabled
+2021-03-01 00:40:29.859225 (MainThread): Parsing macros/etc.sql
+2021-03-01 00:40:29.862431 (MainThread): Parsing macros/catalog.sql
+2021-03-01 00:40:29.869216 (MainThread): Parsing macros/adapters.sql
+2021-03-01 00:40:29.891925 (MainThread): Parsing macros/materializations/seed.sql
+2021-03-01 00:40:29.895600 (MainThread): Parsing macros/materializations/view.sql
+2021-03-01 00:40:29.899199 (MainThread): Parsing macros/materializations/table.sql
+2021-03-01 00:40:29.912270 (MainThread): Parsing macros/materializations/copy.sql
+2021-03-01 00:40:29.917396 (MainThread): Parsing macros/materializations/incremental.sql
+2021-03-01 00:40:29.931461 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-03-01 00:40:29.936811 (MainThread): Parsing macros/core.sql
+2021-03-01 00:40:29.942800 (MainThread): Parsing macros/materializations/helpers.sql
+2021-03-01 00:40:29.962936 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-03-01 00:40:29.966262 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-03-01 00:40:29.989268 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-03-01 00:40:30.023796 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-03-01 00:40:30.049390 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-03-01 00:40:30.055559 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-03-01 00:40:30.068863 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-03-01 00:40:30.087713 (MainThread): Parsing macros/materializations/table/table.sql
+2021-03-01 00:40:30.096245 (MainThread): Parsing macros/materializations/view/view.sql
+2021-03-01 00:40:30.104683 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-03-01 00:40:30.111062 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-03-01 00:40:30.112483 (MainThread): Parsing macros/etc/query.sql
+2021-03-01 00:40:30.114073 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-03-01 00:40:30.116366 (MainThread): Parsing macros/etc/datetime.sql
+2021-03-01 00:40:30.125949 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-03-01 00:40:30.128566 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-03-01 00:40:30.130727 (MainThread): Parsing macros/adapters/common.sql
+2021-03-01 00:40:30.175857 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-03-01 00:40:30.178331 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-03-01 00:40:30.180286 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-03-01 00:40:30.182639 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-03-01 00:40:30.192884 (MainThread): Parsing macros/cross_db_utils/except.sql
+2021-03-01 00:40:30.195577 (MainThread): Parsing macros/cross_db_utils/replace.sql
+2021-03-01 00:40:30.198013 (MainThread): Parsing macros/cross_db_utils/concat.sql
+2021-03-01 00:40:30.201281 (MainThread): Parsing macros/cross_db_utils/datatypes.sql
+2021-03-01 00:40:30.209581 (MainThread): Parsing macros/cross_db_utils/_is_relation.sql
+2021-03-01 00:40:30.211475 (MainThread): Parsing macros/cross_db_utils/length.sql
+2021-03-01 00:40:30.213839 (MainThread): Parsing macros/cross_db_utils/dateadd.sql
+2021-03-01 00:40:30.217181 (MainThread): Parsing macros/cross_db_utils/intersect.sql
+2021-03-01 00:40:30.218836 (MainThread): Parsing macros/cross_db_utils/right.sql
+2021-03-01 00:40:30.221898 (MainThread): Parsing macros/cross_db_utils/datediff.sql
+2021-03-01 00:40:30.232716 (MainThread): Parsing macros/cross_db_utils/safe_cast.sql
+2021-03-01 00:40:30.235304 (MainThread): Parsing macros/cross_db_utils/hash.sql
+2021-03-01 00:40:30.237245 (MainThread): Parsing macros/cross_db_utils/identifier.sql
+2021-03-01 00:40:30.239452 (MainThread): Parsing macros/cross_db_utils/position.sql
+2021-03-01 00:40:30.241617 (MainThread): Parsing macros/cross_db_utils/literal.sql
+2021-03-01 00:40:30.243346 (MainThread): Parsing macros/cross_db_utils/current_timestamp.sql
+2021-03-01 00:40:30.248152 (MainThread): Parsing macros/cross_db_utils/width_bucket.sql
+2021-03-01 00:40:30.254793 (MainThread): Parsing macros/cross_db_utils/_get_utils_namespaces.sql
+2021-03-01 00:40:30.256133 (MainThread): Parsing macros/cross_db_utils/last_day.sql
+2021-03-01 00:40:30.259848 (MainThread): Parsing macros/cross_db_utils/split_part.sql
+2021-03-01 00:40:30.262540 (MainThread): Parsing macros/cross_db_utils/date_trunc.sql
+2021-03-01 00:40:30.264720 (MainThread): Parsing macros/cross_db_utils/_is_ephemeral.sql
+2021-03-01 00:40:30.267310 (MainThread): Parsing macros/materializations/insert_by_period_materialization.sql
+2021-03-01 00:40:30.295409 (MainThread): Parsing macros/logger/pretty_log_format.sql
+2021-03-01 00:40:30.297150 (MainThread): Parsing macros/logger/pretty_time.sql
+2021-03-01 00:40:30.299214 (MainThread): Parsing macros/logger/log_info.sql
+2021-03-01 00:40:30.300932 (MainThread): Parsing macros/datetime/date_spine.sql
+2021-03-01 00:40:30.307064 (MainThread): Parsing macros/web/get_url_host.sql
+2021-03-01 00:40:30.310549 (MainThread): Parsing macros/web/get_url_path.sql
+2021-03-01 00:40:30.314405 (MainThread): Parsing macros/web/get_url_parameter.sql
+2021-03-01 00:40:30.316689 (MainThread): Parsing macros/geo/haversine_distance.sql
+2021-03-01 00:40:30.318958 (MainThread): Parsing macros/schema_tests/equal_rowcount.sql
+2021-03-01 00:40:30.322010 (MainThread): Parsing macros/schema_tests/relationships_where.sql
+2021-03-01 00:40:30.325736 (MainThread): Parsing macros/schema_tests/recency.sql
+2021-03-01 00:40:30.328376 (MainThread): Parsing macros/schema_tests/not_constant.sql
+2021-03-01 00:40:30.330678 (MainThread): Parsing macros/schema_tests/test_unique_where.sql
+2021-03-01 00:40:30.333537 (MainThread): Parsing macros/schema_tests/at_least_one.sql
+2021-03-01 00:40:30.335641 (MainThread): Parsing macros/schema_tests/unique_combination_of_columns.sql
+2021-03-01 00:40:30.340300 (MainThread): Parsing macros/schema_tests/cardinality_equality.sql
+2021-03-01 00:40:30.343611 (MainThread): Parsing macros/schema_tests/expression_is_true.sql
+2021-03-01 00:40:30.347343 (MainThread): Parsing macros/schema_tests/test_not_null_where.sql
+2021-03-01 00:40:30.351225 (MainThread): Parsing macros/schema_tests/equality.sql
+2021-03-01 00:40:30.357507 (MainThread): Parsing macros/schema_tests/mutually_exclusive_ranges.sql
+2021-03-01 00:40:30.366610 (MainThread): Parsing macros/sql/nullcheck_table.sql
+2021-03-01 00:40:30.368948 (MainThread): Parsing macros/sql/get_relations_by_pattern.sql
+2021-03-01 00:40:30.373581 (MainThread): Parsing macros/sql/generate_series.sql
+2021-03-01 00:40:30.379362 (MainThread): Parsing macros/sql/get_relations_by_prefix.sql
+2021-03-01 00:40:30.384112 (MainThread): Parsing macros/sql/get_tables_by_prefix_sql.sql
+2021-03-01 00:40:30.389338 (MainThread): Parsing macros/sql/star.sql
+2021-03-01 00:40:30.396672 (MainThread): Parsing macros/sql/unpivot.sql
+2021-03-01 00:40:30.407509 (MainThread): Parsing macros/sql/union.sql
+2021-03-01 00:40:30.418307 (MainThread): Parsing macros/sql/groupby.sql
+2021-03-01 00:40:30.420361 (MainThread): Parsing macros/sql/surrogate_key.sql
+2021-03-01 00:40:30.424941 (MainThread): Parsing macros/sql/safe_add.sql
+2021-03-01 00:40:30.427326 (MainThread): Parsing macros/sql/nullcheck.sql
+2021-03-01 00:40:30.429655 (MainThread): Parsing macros/sql/get_tables_by_pattern_sql.sql
+2021-03-01 00:40:30.437039 (MainThread): Parsing macros/sql/get_column_values.sql
+2021-03-01 00:40:30.442337 (MainThread): Parsing macros/sql/pivot.sql
+2021-03-01 00:40:30.447124 (MainThread): Parsing macros/sql/get_query_results_as_dict.sql
+2021-03-01 00:40:30.455957 (MainThread): Partial parsing not enabled
+2021-03-01 00:40:30.561366 (MainThread): Acquiring new bigquery connection "model.my_new_project.pages".
+2021-03-01 00:40:30.759741 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_user_stitching".
+2021-03-01 00:40:30.774380 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions".
+2021-03-01 00:40:30.798988 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions__stitched".
+2021-03-01 00:40:30.813814 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions__initial".
+2021-03-01 00:40:30.839069 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_page_views__sessionized".
+2021-03-01 00:40:30.891801 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_page_views".
+2021-03-01 00:40:30.997471 (MainThread): Acquiring new bigquery connection "analysis.segment.audience_overview".
+2021-03-01 00:40:31.294819 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ce0f130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d0c7700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d0abe80>]}
+2021-03-01 00:40:31.295120 (MainThread): Flushing usage events
+2021-03-01 00:40:31.685175 (MainThread): Connection 'analysis.segment.audience_overview' was properly closed.
+2021-03-01 00:40:31.685512 (MainThread): Encountered an error:
+2021-03-01 00:40:31.685790 (MainThread): Compilation Error in model segment_web_page_views (models/base/segment_web_page_views.sql)
+  Model 'model.segment.segment_web_page_views' (models/base/segment_web_page_views.sql) depends on a source named 'dbt_jkaplan.pages' which was not found
+2021-03-01 00:40:31.695668 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = get_full_manifest(self.config)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/perf_utils.py", line 28, in get_full_manifest
+    return load_manifest(
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 854, in load_manifest
+    return ManifestLoader.load_all(config, macro_manifest, macro_hook)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 436, in load_all
+    manifest = loader.create_manifest()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 414, in create_manifest
+    self.process_manifest(manifest)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 379, in process_manifest
+    process_sources(manifest, project_name)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 812, in process_sources
+    _process_sources_for_node(manifest, current_project, node)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 795, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 498, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 597, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 435, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in model segment_web_page_views (models/base/segment_web_page_views.sql)
+  Model 'model.segment.segment_web_page_views' (models/base/segment_web_page_views.sql) depends on a source named 'dbt_jkaplan.pages' which was not found
+
+2021-03-01 00:40:54.359457 (MainThread): Running with dbt=0.19.0
+2021-03-01 00:40:55.101207 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.seed.SeedTask'>, debug=False, defer=None, exclude=None, full_refresh=True, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/jonahkaplan/.dbt', project_dir=None, record_timing_info=None, rpc_method='seed', selector_name=None, show=False, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='seed', write_json=True)
+2021-03-01 00:40:55.107746 (MainThread): Tracking: tracking
+2021-03-01 00:40:55.118945 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b46e2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c72fac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c72f880>]}
+2021-03-01 00:40:55.188495 (MainThread): Partial parsing not enabled
+2021-03-01 00:40:55.190201 (MainThread): Parsing macros/etc.sql
+2021-03-01 00:40:55.194871 (MainThread): Parsing macros/catalog.sql
+2021-03-01 00:40:55.203509 (MainThread): Parsing macros/adapters.sql
+2021-03-01 00:40:55.227505 (MainThread): Parsing macros/materializations/seed.sql
+2021-03-01 00:40:55.231242 (MainThread): Parsing macros/materializations/view.sql
+2021-03-01 00:40:55.235409 (MainThread): Parsing macros/materializations/table.sql
+2021-03-01 00:40:55.248803 (MainThread): Parsing macros/materializations/copy.sql
+2021-03-01 00:40:55.254340 (MainThread): Parsing macros/materializations/incremental.sql
+2021-03-01 00:40:55.270572 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-03-01 00:40:55.275126 (MainThread): Parsing macros/core.sql
+2021-03-01 00:40:55.281814 (MainThread): Parsing macros/materializations/helpers.sql
+2021-03-01 00:40:55.294608 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-03-01 00:40:55.297748 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-03-01 00:40:55.320617 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-03-01 00:40:55.357908 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-03-01 00:40:55.382213 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-03-01 00:40:55.384730 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-03-01 00:40:55.394071 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-03-01 00:40:55.412542 (MainThread): Parsing macros/materializations/table/table.sql
+2021-03-01 00:40:55.421651 (MainThread): Parsing macros/materializations/view/view.sql
+2021-03-01 00:40:55.429307 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-03-01 00:40:55.435260 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-03-01 00:40:55.436500 (MainThread): Parsing macros/etc/query.sql
+2021-03-01 00:40:55.438341 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-03-01 00:40:55.440860 (MainThread): Parsing macros/etc/datetime.sql
+2021-03-01 00:40:55.451496 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-03-01 00:40:55.454326 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-03-01 00:40:55.456722 (MainThread): Parsing macros/adapters/common.sql
+2021-03-01 00:40:55.504991 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-03-01 00:40:55.507391 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-03-01 00:40:55.509431 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-03-01 00:40:55.511743 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-03-01 00:40:55.518272 (MainThread): Parsing macros/cross_db_utils/except.sql
+2021-03-01 00:40:55.520994 (MainThread): Parsing macros/cross_db_utils/replace.sql
+2021-03-01 00:40:55.523899 (MainThread): Parsing macros/cross_db_utils/concat.sql
+2021-03-01 00:40:55.527954 (MainThread): Parsing macros/cross_db_utils/datatypes.sql
+2021-03-01 00:40:55.536958 (MainThread): Parsing macros/cross_db_utils/_is_relation.sql
+2021-03-01 00:40:55.539050 (MainThread): Parsing macros/cross_db_utils/length.sql
+2021-03-01 00:40:55.541263 (MainThread): Parsing macros/cross_db_utils/dateadd.sql
+2021-03-01 00:40:55.544553 (MainThread): Parsing macros/cross_db_utils/intersect.sql
+2021-03-01 00:40:55.546213 (MainThread): Parsing macros/cross_db_utils/right.sql
+2021-03-01 00:40:55.549411 (MainThread): Parsing macros/cross_db_utils/datediff.sql
+2021-03-01 00:40:55.560097 (MainThread): Parsing macros/cross_db_utils/safe_cast.sql
+2021-03-01 00:40:55.562668 (MainThread): Parsing macros/cross_db_utils/hash.sql
+2021-03-01 00:40:55.564682 (MainThread): Parsing macros/cross_db_utils/identifier.sql
+2021-03-01 00:40:55.567057 (MainThread): Parsing macros/cross_db_utils/position.sql
+2021-03-01 00:40:55.569170 (MainThread): Parsing macros/cross_db_utils/literal.sql
+2021-03-01 00:40:55.570605 (MainThread): Parsing macros/cross_db_utils/current_timestamp.sql
+2021-03-01 00:40:55.574627 (MainThread): Parsing macros/cross_db_utils/width_bucket.sql
+2021-03-01 00:40:55.580715 (MainThread): Parsing macros/cross_db_utils/_get_utils_namespaces.sql
+2021-03-01 00:40:55.581884 (MainThread): Parsing macros/cross_db_utils/last_day.sql
+2021-03-01 00:40:55.585261 (MainThread): Parsing macros/cross_db_utils/split_part.sql
+2021-03-01 00:40:55.587714 (MainThread): Parsing macros/cross_db_utils/date_trunc.sql
+2021-03-01 00:40:55.589968 (MainThread): Parsing macros/cross_db_utils/_is_ephemeral.sql
+2021-03-01 00:40:55.592443 (MainThread): Parsing macros/materializations/insert_by_period_materialization.sql
+2021-03-01 00:40:55.621230 (MainThread): Parsing macros/logger/pretty_log_format.sql
+2021-03-01 00:40:55.622933 (MainThread): Parsing macros/logger/pretty_time.sql
+2021-03-01 00:40:55.625186 (MainThread): Parsing macros/logger/log_info.sql
+2021-03-01 00:40:55.627003 (MainThread): Parsing macros/datetime/date_spine.sql
+2021-03-01 00:40:55.633902 (MainThread): Parsing macros/web/get_url_host.sql
+2021-03-01 00:40:55.636645 (MainThread): Parsing macros/web/get_url_path.sql
+2021-03-01 00:40:55.640446 (MainThread): Parsing macros/web/get_url_parameter.sql
+2021-03-01 00:40:55.643019 (MainThread): Parsing macros/geo/haversine_distance.sql
+2021-03-01 00:40:55.645648 (MainThread): Parsing macros/schema_tests/equal_rowcount.sql
+2021-03-01 00:40:55.648734 (MainThread): Parsing macros/schema_tests/relationships_where.sql
+2021-03-01 00:40:55.652988 (MainThread): Parsing macros/schema_tests/recency.sql
+2021-03-01 00:40:55.657125 (MainThread): Parsing macros/schema_tests/not_constant.sql
+2021-03-01 00:40:55.660549 (MainThread): Parsing macros/schema_tests/test_unique_where.sql
+2021-03-01 00:40:55.665517 (MainThread): Parsing macros/schema_tests/at_least_one.sql
+2021-03-01 00:40:55.668772 (MainThread): Parsing macros/schema_tests/unique_combination_of_columns.sql
+2021-03-01 00:40:55.675800 (MainThread): Parsing macros/schema_tests/cardinality_equality.sql
+2021-03-01 00:40:55.679904 (MainThread): Parsing macros/schema_tests/expression_is_true.sql
+2021-03-01 00:40:55.683145 (MainThread): Parsing macros/schema_tests/test_not_null_where.sql
+2021-03-01 00:40:55.686584 (MainThread): Parsing macros/schema_tests/equality.sql
+2021-03-01 00:40:55.695031 (MainThread): Parsing macros/schema_tests/mutually_exclusive_ranges.sql
+2021-03-01 00:40:55.705987 (MainThread): Parsing macros/sql/nullcheck_table.sql
+2021-03-01 00:40:55.708772 (MainThread): Parsing macros/sql/get_relations_by_pattern.sql
+2021-03-01 00:40:55.714504 (MainThread): Parsing macros/sql/generate_series.sql
+2021-03-01 00:40:55.721694 (MainThread): Parsing macros/sql/get_relations_by_prefix.sql
+2021-03-01 00:40:55.726873 (MainThread): Parsing macros/sql/get_tables_by_prefix_sql.sql
+2021-03-01 00:40:55.730087 (MainThread): Parsing macros/sql/star.sql
+2021-03-01 00:40:55.735834 (MainThread): Parsing macros/sql/unpivot.sql
+2021-03-01 00:40:55.745971 (MainThread): Parsing macros/sql/union.sql
+2021-03-01 00:40:55.757049 (MainThread): Parsing macros/sql/groupby.sql
+2021-03-01 00:40:55.759518 (MainThread): Parsing macros/sql/surrogate_key.sql
+2021-03-01 00:40:55.765027 (MainThread): Parsing macros/sql/safe_add.sql
+2021-03-01 00:40:55.769234 (MainThread): Parsing macros/sql/nullcheck.sql
+2021-03-01 00:40:55.772568 (MainThread): Parsing macros/sql/get_tables_by_pattern_sql.sql
+2021-03-01 00:40:55.782768 (MainThread): Parsing macros/sql/get_column_values.sql
+2021-03-01 00:40:55.791535 (MainThread): Parsing macros/sql/pivot.sql
+2021-03-01 00:40:55.797991 (MainThread): Parsing macros/sql/get_query_results_as_dict.sql
+2021-03-01 00:40:55.810989 (MainThread): Partial parsing not enabled
+2021-03-01 00:40:55.915509 (MainThread): Acquiring new bigquery connection "model.my_new_project.pages".
+2021-03-01 00:40:56.118738 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_user_stitching".
+2021-03-01 00:40:56.134017 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions".
+2021-03-01 00:40:56.160455 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions__stitched".
+2021-03-01 00:40:56.176767 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions__initial".
+2021-03-01 00:40:56.205322 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_page_views__sessionized".
+2021-03-01 00:40:56.259714 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_page_views".
+2021-03-01 00:40:56.364498 (MainThread): Acquiring new bigquery connection "analysis.segment.audience_overview".
+2021-03-01 00:40:56.668214 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ce232e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ce29fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cb8d160>]}
+2021-03-01 00:40:56.668464 (MainThread): Flushing usage events
+2021-03-01 00:40:57.085031 (MainThread): Connection 'analysis.segment.audience_overview' was properly closed.
+2021-03-01 00:40:57.085355 (MainThread): Encountered an error:
+2021-03-01 00:40:57.085620 (MainThread): Compilation Error in model segment_web_page_views (models/base/segment_web_page_views.sql)
+  Model 'model.segment.segment_web_page_views' (models/base/segment_web_page_views.sql) depends on a source named 'dbt_jkaplan.pages' which was not found
+2021-03-01 00:40:57.095592 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = get_full_manifest(self.config)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/perf_utils.py", line 28, in get_full_manifest
+    return load_manifest(
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 854, in load_manifest
+    return ManifestLoader.load_all(config, macro_manifest, macro_hook)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 436, in load_all
+    manifest = loader.create_manifest()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 414, in create_manifest
+    self.process_manifest(manifest)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 379, in process_manifest
+    process_sources(manifest, project_name)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 812, in process_sources
+    _process_sources_for_node(manifest, current_project, node)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 795, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 498, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 597, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 435, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in model segment_web_page_views (models/base/segment_web_page_views.sql)
+  Model 'model.segment.segment_web_page_views' (models/base/segment_web_page_views.sql) depends on a source named 'dbt_jkaplan.pages' which was not found
+
+2021-03-01 00:41:22.976603 (MainThread): Running with dbt=0.19.0
+2021-03-01 00:41:23.796100 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.seed.SeedTask'>, debug=False, defer=None, exclude=None, full_refresh=True, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/jonahkaplan/.dbt', project_dir=None, record_timing_info=None, rpc_method='seed', selector_name=None, show=False, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='seed', write_json=True)
+2021-03-01 00:41:23.797622 (MainThread): Tracking: tracking
+2021-03-01 00:41:23.806161 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ffc4fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ffd3370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ffd3130>]}
+2021-03-01 00:41:23.872258 (MainThread): Partial parsing not enabled
+2021-03-01 00:41:23.873714 (MainThread): Parsing macros/etc.sql
+2021-03-01 00:41:23.876757 (MainThread): Parsing macros/catalog.sql
+2021-03-01 00:41:23.883775 (MainThread): Parsing macros/adapters.sql
+2021-03-01 00:41:23.909665 (MainThread): Parsing macros/materializations/seed.sql
+2021-03-01 00:41:23.913173 (MainThread): Parsing macros/materializations/view.sql
+2021-03-01 00:41:23.916897 (MainThread): Parsing macros/materializations/table.sql
+2021-03-01 00:41:23.929598 (MainThread): Parsing macros/materializations/copy.sql
+2021-03-01 00:41:23.934784 (MainThread): Parsing macros/materializations/incremental.sql
+2021-03-01 00:41:23.949661 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-03-01 00:41:23.954596 (MainThread): Parsing macros/core.sql
+2021-03-01 00:41:23.961464 (MainThread): Parsing macros/materializations/helpers.sql
+2021-03-01 00:41:23.973996 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-03-01 00:41:23.976934 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-03-01 00:41:23.998061 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-03-01 00:41:24.032760 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-03-01 00:41:24.055336 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-03-01 00:41:24.061508 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-03-01 00:41:24.075226 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-03-01 00:41:24.102020 (MainThread): Parsing macros/materializations/table/table.sql
+2021-03-01 00:41:24.111361 (MainThread): Parsing macros/materializations/view/view.sql
+2021-03-01 00:41:24.119414 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-03-01 00:41:24.125428 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-03-01 00:41:24.126900 (MainThread): Parsing macros/etc/query.sql
+2021-03-01 00:41:24.129397 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-03-01 00:41:24.132384 (MainThread): Parsing macros/etc/datetime.sql
+2021-03-01 00:41:24.145323 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-03-01 00:41:24.148879 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-03-01 00:41:24.151810 (MainThread): Parsing macros/adapters/common.sql
+2021-03-01 00:41:24.204701 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-03-01 00:41:24.207691 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-03-01 00:41:24.209773 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-03-01 00:41:24.212081 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-03-01 00:41:24.217552 (MainThread): Parsing macros/cross_db_utils/except.sql
+2021-03-01 00:41:24.219872 (MainThread): Parsing macros/cross_db_utils/replace.sql
+2021-03-01 00:41:24.222084 (MainThread): Parsing macros/cross_db_utils/concat.sql
+2021-03-01 00:41:24.225488 (MainThread): Parsing macros/cross_db_utils/datatypes.sql
+2021-03-01 00:41:24.234050 (MainThread): Parsing macros/cross_db_utils/_is_relation.sql
+2021-03-01 00:41:24.236108 (MainThread): Parsing macros/cross_db_utils/length.sql
+2021-03-01 00:41:24.238424 (MainThread): Parsing macros/cross_db_utils/dateadd.sql
+2021-03-01 00:41:24.241734 (MainThread): Parsing macros/cross_db_utils/intersect.sql
+2021-03-01 00:41:24.243430 (MainThread): Parsing macros/cross_db_utils/right.sql
+2021-03-01 00:41:24.246563 (MainThread): Parsing macros/cross_db_utils/datediff.sql
+2021-03-01 00:41:24.258313 (MainThread): Parsing macros/cross_db_utils/safe_cast.sql
+2021-03-01 00:41:24.261176 (MainThread): Parsing macros/cross_db_utils/hash.sql
+2021-03-01 00:41:24.263426 (MainThread): Parsing macros/cross_db_utils/identifier.sql
+2021-03-01 00:41:24.265946 (MainThread): Parsing macros/cross_db_utils/position.sql
+2021-03-01 00:41:24.268201 (MainThread): Parsing macros/cross_db_utils/literal.sql
+2021-03-01 00:41:24.269792 (MainThread): Parsing macros/cross_db_utils/current_timestamp.sql
+2021-03-01 00:41:24.274285 (MainThread): Parsing macros/cross_db_utils/width_bucket.sql
+2021-03-01 00:41:24.280485 (MainThread): Parsing macros/cross_db_utils/_get_utils_namespaces.sql
+2021-03-01 00:41:24.281839 (MainThread): Parsing macros/cross_db_utils/last_day.sql
+2021-03-01 00:41:24.285365 (MainThread): Parsing macros/cross_db_utils/split_part.sql
+2021-03-01 00:41:24.288159 (MainThread): Parsing macros/cross_db_utils/date_trunc.sql
+2021-03-01 00:41:24.290456 (MainThread): Parsing macros/cross_db_utils/_is_ephemeral.sql
+2021-03-01 00:41:24.293237 (MainThread): Parsing macros/materializations/insert_by_period_materialization.sql
+2021-03-01 00:41:24.321335 (MainThread): Parsing macros/logger/pretty_log_format.sql
+2021-03-01 00:41:24.323357 (MainThread): Parsing macros/logger/pretty_time.sql
+2021-03-01 00:41:24.325590 (MainThread): Parsing macros/logger/log_info.sql
+2021-03-01 00:41:24.327543 (MainThread): Parsing macros/datetime/date_spine.sql
+2021-03-01 00:41:24.333898 (MainThread): Parsing macros/web/get_url_host.sql
+2021-03-01 00:41:24.337095 (MainThread): Parsing macros/web/get_url_path.sql
+2021-03-01 00:41:24.341603 (MainThread): Parsing macros/web/get_url_parameter.sql
+2021-03-01 00:41:24.344798 (MainThread): Parsing macros/geo/haversine_distance.sql
+2021-03-01 00:41:24.347531 (MainThread): Parsing macros/schema_tests/equal_rowcount.sql
+2021-03-01 00:41:24.350611 (MainThread): Parsing macros/schema_tests/relationships_where.sql
+2021-03-01 00:41:24.354683 (MainThread): Parsing macros/schema_tests/recency.sql
+2021-03-01 00:41:24.357772 (MainThread): Parsing macros/schema_tests/not_constant.sql
+2021-03-01 00:41:24.360178 (MainThread): Parsing macros/schema_tests/test_unique_where.sql
+2021-03-01 00:41:24.363154 (MainThread): Parsing macros/schema_tests/at_least_one.sql
+2021-03-01 00:41:24.365451 (MainThread): Parsing macros/schema_tests/unique_combination_of_columns.sql
+2021-03-01 00:41:24.369664 (MainThread): Parsing macros/schema_tests/cardinality_equality.sql
+2021-03-01 00:41:24.372917 (MainThread): Parsing macros/schema_tests/expression_is_true.sql
+2021-03-01 00:41:24.375270 (MainThread): Parsing macros/schema_tests/test_not_null_where.sql
+2021-03-01 00:41:24.378014 (MainThread): Parsing macros/schema_tests/equality.sql
+2021-03-01 00:41:24.382470 (MainThread): Parsing macros/schema_tests/mutually_exclusive_ranges.sql
+2021-03-01 00:41:24.390098 (MainThread): Parsing macros/sql/nullcheck_table.sql
+2021-03-01 00:41:24.392333 (MainThread): Parsing macros/sql/get_relations_by_pattern.sql
+2021-03-01 00:41:24.397471 (MainThread): Parsing macros/sql/generate_series.sql
+2021-03-01 00:41:24.403421 (MainThread): Parsing macros/sql/get_relations_by_prefix.sql
+2021-03-01 00:41:24.408000 (MainThread): Parsing macros/sql/get_tables_by_prefix_sql.sql
+2021-03-01 00:41:24.410560 (MainThread): Parsing macros/sql/star.sql
+2021-03-01 00:41:24.415525 (MainThread): Parsing macros/sql/unpivot.sql
+2021-03-01 00:41:24.424030 (MainThread): Parsing macros/sql/union.sql
+2021-03-01 00:41:24.433526 (MainThread): Parsing macros/sql/groupby.sql
+2021-03-01 00:41:24.435442 (MainThread): Parsing macros/sql/surrogate_key.sql
+2021-03-01 00:41:24.439938 (MainThread): Parsing macros/sql/safe_add.sql
+2021-03-01 00:41:24.442307 (MainThread): Parsing macros/sql/nullcheck.sql
+2021-03-01 00:41:24.444585 (MainThread): Parsing macros/sql/get_tables_by_pattern_sql.sql
+2021-03-01 00:41:24.451928 (MainThread): Parsing macros/sql/get_column_values.sql
+2021-03-01 00:41:24.457486 (MainThread): Parsing macros/sql/pivot.sql
+2021-03-01 00:41:24.462453 (MainThread): Parsing macros/sql/get_query_results_as_dict.sql
+2021-03-01 00:41:24.477967 (MainThread): Partial parsing not enabled
+2021-03-01 00:41:24.585791 (MainThread): Acquiring new bigquery connection "model.my_new_project.pages".
+2021-03-01 00:41:24.769310 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_user_stitching".
+2021-03-01 00:41:24.783697 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions".
+2021-03-01 00:41:24.810862 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions__stitched".
+2021-03-01 00:41:24.829786 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_sessions__initial".
+2021-03-01 00:41:24.857355 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_page_views__sessionized".
+2021-03-01 00:41:24.907932 (MainThread): Acquiring new bigquery connection "model.segment.segment_web_page_views".
+2021-03-01 00:41:25.009944 (MainThread): Acquiring new bigquery connection "analysis.segment.audience_overview".
+2021-03-01 00:41:25.330231 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1106fbf70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110697ee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11068e4c0>]}
+2021-03-01 00:41:25.330491 (MainThread): Flushing usage events
+2021-03-01 00:41:25.734404 (MainThread): Connection 'analysis.segment.audience_overview' was properly closed.
+2021-03-01 00:41:25.734740 (MainThread): Encountered an error:
+2021-03-01 00:41:25.735012 (MainThread): Compilation Error in model segment_web_page_views (models/base/segment_web_page_views.sql)
+  Model 'model.segment.segment_web_page_views' (models/base/segment_web_page_views.sql) depends on a source named 'fivetran-data-culture-big-vv9p.dbt_jkaplan.pages' which was not found
+2021-03-01 00:41:25.745418 (MainThread): Traceback (most recent call last):
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 125, in main
+    results, succeeded = handle_and_check(args)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 203, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/main.py", line 256, in run_from_args
+    results = task.run()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 406, in run
+    self._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 122, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 79, in _runtime_initialize
+    self.load_manifest()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/task/runnable.py", line 66, in load_manifest
+    self.manifest = get_full_manifest(self.config)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/perf_utils.py", line 28, in get_full_manifest
+    return load_manifest(
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 854, in load_manifest
+    return ManifestLoader.load_all(config, macro_manifest, macro_hook)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 436, in load_all
+    manifest = loader.create_manifest()
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 414, in create_manifest
+    self.process_manifest(manifest)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 379, in process_manifest
+    process_sources(manifest, project_name)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 812, in process_sources
+    _process_sources_for_node(manifest, current_project, node)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 795, in _process_sources_for_node
+    invalid_source_fail_unless_test(
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/parser/manifest.py", line 498, in invalid_source_fail_unless_test
+    source_target_not_found(
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 597, in source_target_not_found
+    raise_compiler_error(msg, model)
+  File "/usr/local/Cellar/dbt/0.19.0_1/libexec/lib/python3.8/site-packages/dbt/exceptions.py", line 435, in raise_compiler_error
+    raise CompilationException(msg, node)
+dbt.exceptions.CompilationException: Compilation Error in model segment_web_page_views (models/base/segment_web_page_views.sql)
+  Model 'model.segment.segment_web_page_views' (models/base/segment_web_page_views.sql) depends on a source named 'fivetran-data-culture-big-vv9p.dbt_jkaplan.pages' which was not found
+

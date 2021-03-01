@@ -34,8 +34,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   prod:
     materialized: table
-  staging:
-    materialized: view
 
 vars:
   # docs: https://hub.getdbt.com/fishtown-analytics/segment/latest/
@@ -44,7 +42,10 @@ vars:
   # 2. dbt seed
   # 3. dbt ru
   segment:
-    segment_page_views_table: "{{ source('shopify_littledata', 'pages') }}"
+    # # THIS WORKS:
+    # segment_page_views_table: "dbt_jkaplan.pages"
+    segment_page_views_table: "{{ source ('fivetran-data-culture-big-vv9p.dbt_jkaplan', 'pages') }}"
+    # # OTHER CONFIGS 
     # segment_sessionization_trailing_window: 3
     # segment_inactivity_cutoff: 30 * 60
     # segment_pass_through_columns: []
